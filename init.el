@@ -107,14 +107,6 @@
 ; delete trailing whitespace before save file
 (add-hook 'before-save-hook 'delete-trailing-whitespace)
 
-; enhance file opening and buffer switching.
-(ido-mode t)
-(setq ido-enable-flex-matching t)
-(ido-everywhere t)
-(setq ido-exit 'refresh)
-(require 'ido-vertical-mode)
-(ido-vertical-mode t)
-
 ; delete newline character at the end of the line when C-k
 (setq kill-whole-line t)
 
