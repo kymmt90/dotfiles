@@ -102,6 +102,7 @@
   (setq uniquify-buffer-name-style 'post-forward-angle-brackets))
 
 ; configure wdired
+(require 'dired)
 (define-key dired-mode-map "r" 'wdired-change-to-wdired-mode)
 
 ; delete trailing whitespace before save file
