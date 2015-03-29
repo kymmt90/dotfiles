@@ -176,7 +176,11 @@
 ; Helm
 (when (require 'helm-config nil t)
   (helm-mode 1)
-  (global-set-key (kbd "C-c h") 'helm-mini)
+  (global-set-key (kbd "C-x b") 'helm-buffers-list)
+  (global-set-key (kbd "C-x C-f") 'helm-find-files)
+  (global-set-key (kbd "C-c f") 'helm-for-files)
+  (global-set-key (kbd "C-c y") 'helm-show-kill-ring)
+  (global-set-key (kbd "C-c s") 'helm-do-grep)
   (global-set-key (kbd "M-x") 'helm-M-x))
 
 ; auto-complete
