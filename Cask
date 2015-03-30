@@ -3,11 +3,11 @@
 
 (depends-on "color-theme")
 
-(depends-on "color-moccur")
-(depends-on "redo+")
-(depends-on "migemo")
 (depends-on "auto-complete")
+(depends-on "color-moccur")
+(depends-on "migemo")
 (depends-on "popup")
+(depends-on "redo+")
 (depends-on "yasnippet")
 
 (depends-on "helm")
@@ -18,4 +18,3 @@
 (depends-on "markdown-mode")
 (depends-on "python-mode")
 (depends-on "scala-mode2")
-
