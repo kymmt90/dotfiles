@@ -8,6 +8,7 @@
 (depends-on "migemo")
 (depends-on "popup")
 (depends-on "redo+")
+(depends-on "smartparens")
 (depends-on "yasnippet")
 
 (depends-on "helm")
