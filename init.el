@@ -129,6 +129,8 @@
 
 (setq indicate-empty-lines t)
 
+(desktop-save-mode 1)
+
 
 ; Redo+
 (when (require 'redo+ nil t)
