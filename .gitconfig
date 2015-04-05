@@ -1,0 +1,31 @@
+[user]
+	name  = Kohei Yamamoto
+	email = kymmt90@gmail.com
+[core]
+	editor = vi
+	excludesfile = ~/.gitignore
+[color]
+	ui = true
+[alias]
+	ae   = add -e
+	ap   = add -p
+	br   = branch
+	ci   = commit
+	cim  = commit -m
+	ciam = commit -am
+	co   = checkout
+	di   = diff
+	dc   = diff --cached
+	l    = log
+	ol   = log --oneline
+	olg  = log --oneline --graph
+	s    = show
+	st   = status
+[pager]
+	diff = diff-highlight | less
+	log  = diff-highlight | less
+	show = diff-highlight | less
+[push]
+	default = simple
+[help]
+	autocorrect = 1
