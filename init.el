@@ -227,3 +227,8 @@
 (setq auto-mode-alist (cons '("\\.hs" . haskell-mode) auto-mode-alist))
 (add-hook 'haskell-mode-hook 'turn-on-haskell-simple-indent)
 (add-hook 'haskell-mode-hook (lambda () (setq tab-width 4)))
+
+; sh-mode
+(defun my-sh-mode-hook()
+  (setq indent-tabs-mode nil))
+(add-hook 'sh-mode-hook 'my-sh-mode-hook)
