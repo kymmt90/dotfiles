@@ -204,6 +204,9 @@
 ; git-gutter
 (global-git-gutter-mode +1)
 
+; Flycheck
+(add-hook 'after-init-hook #'global-flycheck-mode)
+
 ; emacs-lisp-mode
 (add-hook 'emacs-lisp-mode-hook
           '(lambda ()
