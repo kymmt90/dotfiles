@@ -207,6 +207,12 @@
 ; Flycheck
 (add-hook 'after-init-hook #'global-flycheck-mode)
 
+; SmartCompile
+(when (require 'smart-compile nil t)
+  (setq smart-compile-alist (append '(("\\.rb$" . "ruby %f")) smart-compile-alist))
+  (global-set-key (kbd "C-x c") 'smart-compile)
+  (global-set-key (kbd "C-x C-m") (kbd "C-x c C-m")))
+
 ; emacs-lisp-mode
 (add-hook 'emacs-lisp-mode-hook
           '(lambda ()
