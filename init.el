@@ -198,6 +198,9 @@
 (when (require 'smartparens-config nil t)
   (smartparens-global-mode 1))
 
+; Magit
+(require 'magit)
+
 ; emacs-lisp-mode
 (add-hook 'emacs-lisp-mode-hook
           '(lambda ()
