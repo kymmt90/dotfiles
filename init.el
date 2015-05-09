@@ -241,3 +241,6 @@
 (defun my-sh-mode-hook()
   (setq indent-tabs-mode nil))
 (add-hook 'sh-mode-hook 'my-sh-mode-hook)
+
+; ruby-mode
+(add-hook 'ruby-mode-hook (lambda () (setq flycheck-checker 'ruby-rubocop)))
