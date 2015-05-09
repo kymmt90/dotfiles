@@ -201,6 +201,9 @@
 ; Magit
 (require 'magit)
 
+; git-gutter
+(global-git-gutter-mode +1)
+
 ; emacs-lisp-mode
 (add-hook 'emacs-lisp-mode-hook
           '(lambda ()
