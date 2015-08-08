@@ -250,3 +250,5 @@
 
 ; ruby-mode
 (add-hook 'ruby-mode-hook (lambda () (setq flycheck-checker 'ruby-rubocop)))
+(add-hook 'ruby-mode-hook 'robe-mode)
+(add-hook 'robe-mode-hook 'ac-robe-setup)

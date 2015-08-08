@@ -23,3 +23,6 @@
 (depends-on "markdown-mode")
 (depends-on "python-mode")
 (depends-on "scala-mode2")
+
+(depends-on "robe")
+(depends-on "inf-ruby")
