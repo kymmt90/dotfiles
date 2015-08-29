@@ -252,3 +252,7 @@
 (add-hook 'ruby-mode-hook (lambda () (setq flycheck-checker 'ruby-rubocop)))
 (add-hook 'ruby-mode-hook 'robe-mode)
 (add-hook 'robe-mode-hook 'ac-robe-setup)
+
+; csharp-mode
+(setq auto-mode-alist (cons '("\\.cs\\'" . csharp-mode) auto-mode-alist))
+(add-hook 'csharp-mode-hook (lambda () (setq tab-width 4)))

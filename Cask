@@ -26,3 +26,5 @@
 
 (depends-on "robe")
 (depends-on "inf-ruby")
+
+(depends-on "csharp-mode")
