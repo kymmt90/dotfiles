@@ -28,3 +28,5 @@
 (depends-on "inf-ruby")
 
 (depends-on "csharp-mode")
+
+(depends-on "yaml-mode")
