@@ -203,6 +203,8 @@
 
 ; git-gutter
 (global-git-gutter-mode +1)
+(custom-set-variables '(git-gutter:update-interval 2))
+(custom-set-variables '(git-gutter:lighter " GG"))
 
 ; Flycheck
 (add-hook 'after-init-hook #'global-flycheck-mode)
