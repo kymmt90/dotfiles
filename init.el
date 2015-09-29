@@ -211,7 +211,7 @@
 
 ; SmartCompile
 (when (require 'smart-compile nil t)
-  (setq smart-compile-alist (append '(("\\.rb$" . "ruby %f")) smart-compile-alist))
+  (setq smart-compile-alist (append '(("\\.rb\\'" . "ruby %f")) smart-compile-alist))
   (global-set-key (kbd "C-x c") 'smart-compile)
   (global-set-key (kbd "C-x C-m") (kbd "C-x c C-m")))
 
@@ -232,17 +232,17 @@
 (add-hook 'java-mode-hook 'my-c-mode-hook)
 
 ; markdown-mode
-(setq auto-mode-alist (cons '("\\.md" . markdown-mode) auto-mode-alist))
+(setq auto-mode-alist (cons '("\\.md\\'" . markdown-mode) auto-mode-alist))
 (setq markdown-command "/usr/local/bin/markdown")
 
 ; prolog-mode
-(setq auto-mode-alist (cons '("\\.pl" . prolog-mode) auto-mode-alist))
+(setq auto-mode-alist (cons '("\\.pl\\'" . prolog-mode) auto-mode-alist))
 
 ; scala-mode
 (setq scala-indent:step 4)
 
 ; haskell-mode
-(setq auto-mode-alist (cons '("\\.hs" . haskell-mode) auto-mode-alist))
+(setq auto-mode-alist (cons '("\\.hs\\'" . haskell-mode) auto-mode-alist))
 (add-hook 'haskell-mode-hook 'turn-on-haskell-simple-indent)
 (add-hook 'haskell-mode-hook (lambda () (setq tab-width 4)))
 
@@ -261,4 +261,4 @@
 (add-hook 'csharp-mode-hook (lambda () (setq tab-width 4)))
 
 ;; yaml-mode
-(setq auto-mode-alist (cons '("\\.yml$" . yaml-mode) auto-mode-alist))
+(setq auto-mode-alist (cons '("\\.yml\\'" . yaml-mode) auto-mode-alist))
