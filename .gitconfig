@@ -14,11 +14,14 @@
 	cim  = commit -m
 	ciam = commit -am
 	co   = checkout
+	cb   = checkout -b
 	di   = diff
 	dc   = diff --cached
 	l    = log
+	m    = merge
 	ol   = log --oneline
 	olg  = log --oneline --graph
+	p    = push
 	s    = show
 	st   = status
 [pager]
