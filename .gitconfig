@@ -17,6 +17,7 @@
 	cb   = checkout -b
 	di   = diff
 	dc   = diff --cached
+	grep = grep -n
 	l    = log
 	m    = merge
 	ol   = log --oneline
