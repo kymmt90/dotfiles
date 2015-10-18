@@ -30,3 +30,5 @@
 (depends-on "csharp-mode")
 
 (depends-on "yaml-mode")
+
+(depends-on "haml-mode")

@@ -262,3 +262,6 @@
 
 ;; yaml-mode
 (setq auto-mode-alist (cons '("\\.yml\\'" . yaml-mode) auto-mode-alist))
+
+;; haml-mode
+(setq auto-mode-alist (cons '("\\.haml\\'" . haml-mode) auto-mode-alist))
