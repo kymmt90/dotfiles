@@ -265,3 +265,6 @@
 
 ;; haml-mode
 (setq auto-mode-alist (cons '("\\.haml\\'" . haml-mode) auto-mode-alist))
+
+;; coffee-mode
+(setq auto-mode-alist (cons '("\\.coffee\\'" . coffee-mode) auto-mode-alist))
