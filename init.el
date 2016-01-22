@@ -157,9 +157,9 @@
   (global-set-key (kbd "M-x") 'helm-M-x))
 
 ; auto-complete
-(require 'auto-complete-config)
-(ac-config-default)
-(setq ac-use-menu-map t)
+(when (require 'auto-complete-config nil t)
+  (ac-config-default)
+  (setq ac-use-menu-map t))
 
 ; yasnippet
 (require 'yasnippet)
