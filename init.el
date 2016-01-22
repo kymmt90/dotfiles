@@ -89,6 +89,8 @@
 ; match only file name when do I-search in dired buffer
 (setq dired-isearch-filenames t)
 
+(global-set-key (kbd "C-j") 'newline-and-indent)
+
 
 ; set ascii font
 (set-face-attribute 'default nil
