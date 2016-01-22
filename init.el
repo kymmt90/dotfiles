@@ -161,22 +161,6 @@
   (ac-config-default)
   (setq ac-use-menu-map t))
 
-; yasnippet
-(require 'yasnippet)
-(setq yas-snippet-dirs
-	  '("~/.emacs.d/snippets"
-		"~/.emacs.d/elpa/yasnippet-20140427.1224/snippets"))
-(yas-global-mode t)
-
-; display buffer to create a new snippet
-(define-key yas-minor-mode-map (kbd "C-x i n") 'yas-new-snippet)
-
-; view / edit snippets
-(define-key yas-minor-mode-map (kbd "C-x i v") 'yas-visit-snippet-file)
-
-; not use yas's popup prompt
-(setq yas-prompt-function 'yas-no-prompt)
-
 ; Migemo
 (when (require 'migemo nil t)
   (setq migemo-options '("-q" "--emacs"))

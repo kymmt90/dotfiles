@@ -12,7 +12,6 @@
 (depends-on "popup")
 (depends-on "redo+")
 (depends-on "smartparens")
-(depends-on "yasnippet")
 (depends-on "smart-compile")
 
 (depends-on "helm")
