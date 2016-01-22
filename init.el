@@ -53,9 +53,6 @@
 ; set default encoding UTF-8 and default newline "LF" (UNIX-style)
 (set-language-environment "Japanese")
 (prefer-coding-system 'utf-8)
-(when (eq window-system 'darwin)
-  (set-file-name-coding-system 'cp932)
-  (setq locale-coding-system 'cp932))
 
 ; save backup and auto-save files in "~/.emacs.d/backups/"
 (add-to-list 'backup-directory-alist
