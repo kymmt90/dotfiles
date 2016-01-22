@@ -22,9 +22,6 @@
 (depends-on "python-mode")
 (depends-on "scala-mode2")
 
-(depends-on "robe")
-(depends-on "inf-ruby")
-
 (depends-on "csharp-mode")
 
 (depends-on "yaml-mode")
