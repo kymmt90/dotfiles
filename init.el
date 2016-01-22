@@ -154,7 +154,6 @@
   (global-set-key (kbd "C-x C-f") 'helm-find-files)
   (global-set-key (kbd "C-c f") 'helm-for-files)
   (global-set-key (kbd "C-c y") 'helm-show-kill-ring)
-  (global-set-key (kbd "C-c s") 'helm-do-grep)
   (global-set-key (kbd "M-x") 'helm-M-x))
 
 ; auto-complete
