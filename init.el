@@ -178,7 +178,7 @@
   (smartparens-global-mode 1))
 
 ; Magit
-(require 'magit)
+(when (require 'magit nil t))
 
 ; git-gutter
 (global-git-gutter-mode +1)
