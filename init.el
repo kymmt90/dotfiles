@@ -111,11 +111,10 @@
 
 (global-hl-line-mode nil)
 
-; not display tool bar, menu bar and scroll bar except for terminal
-(when window-system
-  (tool-bar-mode 0)
-  (menu-bar-mode 0)
-  (scroll-bar-mode 0))
+; not display tool bar, menu bar and scroll bar
+(tool-bar-mode 0)
+(menu-bar-mode 0)
+(scroll-bar-mode 0)
 
 ; configure transparence
 (when window-system
