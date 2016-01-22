@@ -243,3 +243,18 @@
 
 ;; coffee-mode
 (setq auto-mode-alist (cons '("\\.coffee\\'" . coffee-mode) auto-mode-alist))
+
+;; web-mode
+(when (require 'web-mode nil t)
+  (add-to-list 'auto-mode-alist '("\\.html?\\'" . web-mode))
+  (add-to-list 'auto-mode-alist '("\\.css\\'" . web-mode))
+  (add-to-list 'auto-mode-alist '("\\.scss\\'" . web-mode))
+  (add-to-list 'auto-mode-alist '("\\.xml\\'" . web-mode))
+  (add-to-list 'auto-mode-alist '("\\.js\\'" . web-mode))
+  (add-to-list 'auto-mode-alist '("\\.erb\\'" . web-mode)))
+
+(defun my-web-mode-hook()
+  (setq web-mode-markup-indent-offset 2)
+  (setq web-mode-css-indent-offset 2)
+  (setq web-mode-script-indent-offset 2))
+(add-hook 'web-mode-hook 'my-web-mode-hook)

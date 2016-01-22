@@ -32,3 +32,5 @@
 (depends-on "haml-mode")
 
 (depends-on "coffee-mode")
+
+(depends-on "web-mode")
