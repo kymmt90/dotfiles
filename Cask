@@ -5,7 +5,6 @@
 
 (depends-on "auto-complete")
 (depends-on "color-moccur")
-(depends-on "flycheck")
 (depends-on "git-gutter")
 (depends-on "magit")
 (depends-on "migemo")

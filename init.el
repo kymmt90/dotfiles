@@ -185,9 +185,6 @@
 (custom-set-variables '(git-gutter:update-interval 2))
 (custom-set-variables '(git-gutter:lighter " GG"))
 
-; Flycheck
-(add-hook 'after-init-hook #'global-flycheck-mode)
-
 ; SmartCompile
 (when (require 'smart-compile nil t)
   (setq smart-compile-alist (append '(("\\.rb\\'" . "ruby %f")) smart-compile-alist))
@@ -231,7 +228,6 @@
 (add-hook 'sh-mode-hook 'my-sh-mode-hook)
 
 ; ruby-mode
-(add-hook 'ruby-mode-hook (lambda () (setq flycheck-checker 'ruby-rubocop)))
 (add-hook 'ruby-mode-hook 'robe-mode)
 (add-hook 'robe-mode-hook 'ac-robe-setup)
 
