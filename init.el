@@ -123,7 +123,7 @@
 ; show the function name where the cursor is in
 (which-function-mode t)
 
-(setq indicate-empty-lines t)
+(setq-default indicate-buffer-boundaries 'left)
 
 (desktop-save-mode 1)
 
