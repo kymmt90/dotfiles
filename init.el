@@ -196,6 +196,11 @@
 ;; Flycheck
 (add-hook 'after-init-hook #'global-flycheck-mode)
 
+;; ag
+(when (require 'ag nil t)
+  (setq ag-executable "/usr/local/bin/ag")
+  (setq ag-highlight-search t))
+
 
 ; emacs-lisp-mode
 (add-hook 'emacs-lisp-mode-hook

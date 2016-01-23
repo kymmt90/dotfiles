@@ -15,6 +15,7 @@
 (depends-on "helm")
 (depends-on "helm-migemo")
 (depends-on "flycheck")
+(depends-on "ag")
 
 (depends-on "haskell-mode")
 (depends-on "io-mode")
