@@ -193,6 +193,10 @@
   (global-set-key (kbd "C-x c") 'smart-compile)
   (global-set-key (kbd "C-x C-m") (kbd "C-x c C-m")))
 
+;; Flycheck
+(add-hook 'after-init-hook #'global-flycheck-mode)
+
+
 ; emacs-lisp-mode
 (add-hook 'emacs-lisp-mode-hook
           '(lambda ()

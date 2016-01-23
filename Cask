@@ -12,22 +12,17 @@
 (depends-on "redo+")
 (depends-on "smartparens")
 (depends-on "smart-compile")
-
 (depends-on "helm")
 (depends-on "helm-migemo")
+(depends-on "flycheck")
 
 (depends-on "haskell-mode")
 (depends-on "io-mode")
 (depends-on "markdown-mode")
 (depends-on "python-mode")
 (depends-on "scala-mode2")
-
 (depends-on "csharp-mode")
-
 (depends-on "yaml-mode")
-
 (depends-on "haml-mode")
-
 (depends-on "coffee-mode")
-
 (depends-on "web-mode")
