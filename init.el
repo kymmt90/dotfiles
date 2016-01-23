@@ -155,9 +155,22 @@
 (when (require 'ag nil t)
   (setq ag-highlight-search t))
 
+; Migemo
+(when (require 'migemo nil t)
+  (setq migemo-options '("-q" "--emacs"))
+  (setq migemo-command "/usr/local/bin/cmigemo")
+  (setq migemo-dictionary "/usr/local/share/migemo/utf-8/migemo-dict")
+  (setq migemo-user-dictionary nil)
+  (setq migemo-regex-dictionary nil)
+  (setq migemo-coding-system 'utf-8)
+  (load-library "migemo")
+  (migemo-init)
+)
+
 ; Helm
 (when (require 'helm-config nil t)
   (helm-mode 1)
+  (helm-migemo-mode 1)
   (global-set-key (kbd "C-x b") 'helm-buffers-list)
   (global-set-key (kbd "C-x C-f") 'helm-find-files)
   (global-set-key (kbd "C-c f") 'helm-for-files)
@@ -170,18 +183,6 @@
 (when (require 'auto-complete-config nil t)
   (ac-config-default)
   (setq ac-use-menu-map t))
-
-; Migemo
-(when (require 'migemo nil t)
-  (setq migemo-options '("-q" "--emacs"))
-  (setq migemo-command "/usr/local/bin/cmigemo")
-  (setq migemo-dictionary "/usr/local/share/migemo/utf-8/migemo-dict")
-  (setq migemo-user-dictionary nil)
-  (setq migemo-regex-dictionary nil)
-  (setq migemo-coding-system 'utf-8)
-  (load-library "migemo")
-  (migemo-init)
-)
 
 ; smartparens
 (when (require 'smartparens-config nil t)
