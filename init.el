@@ -2,6 +2,8 @@
 (require 'cask "~/.cask/cask.el")
 (cask-initialize)
 
+(setq exec-path (append exec-path '("/usr/local/bin")))
+
 
 ; save history of buffers
 (savehist-mode t)
@@ -198,7 +200,6 @@
 
 ;; ag
 (when (require 'ag nil t)
-  (setq ag-executable "/usr/local/bin/ag")
   (setq ag-highlight-search t))
 
 
