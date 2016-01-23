@@ -151,6 +151,10 @@
   (color-theme-initialize)
   (color-theme-dark-laptop))
 
+;; ag
+(when (require 'ag nil t)
+  (setq ag-highlight-search t))
+
 ; Helm
 (when (require 'helm-config nil t)
   (helm-mode 1)
@@ -159,6 +163,8 @@
   (global-set-key (kbd "C-c f") 'helm-for-files)
   (global-set-key (kbd "C-c y") 'helm-show-kill-ring)
   (global-set-key (kbd "M-x") 'helm-M-x))
+(when (require 'helm-ag nil t)
+  (global-set-key (kbd "C-c s") 'helm-ag))
 
 ; auto-complete
 (when (require 'auto-complete-config nil t)
@@ -197,10 +203,6 @@
 
 ;; Flycheck
 (add-hook 'after-init-hook #'global-flycheck-mode)
-
-;; ag
-(when (require 'ag nil t)
-  (setq ag-highlight-search t))
 
 
 ; emacs-lisp-mode
