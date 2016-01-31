@@ -269,3 +269,6 @@
   (setq web-mode-css-indent-offset 2)
   (setq web-mode-script-indent-offset 2))
 (add-hook 'web-mode-hook 'my-web-mode-hook)
+
+;; ruby-mode
+(setq ruby-insert-encoding-magic-comment nil)
