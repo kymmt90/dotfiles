@@ -17,6 +17,7 @@
 (depends-on "flycheck")
 (depends-on "ag")
 (depends-on "helm-ag")
+(depends-on "rbenv")
 
 (depends-on "haskell-mode")
 (depends-on "io-mode")

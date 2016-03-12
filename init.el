@@ -205,6 +205,10 @@
 ;; Flycheck
 (add-hook 'after-init-hook #'global-flycheck-mode)
 
+;; rbenv
+(when (require 'rbenv nil t)
+  (global-rbenv-mode)
+  (rbenv-use-global))
 
 ; emacs-lisp-mode
 (add-hook 'emacs-lisp-mode-hook
