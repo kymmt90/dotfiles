@@ -122,7 +122,7 @@
 
 ; configure transparence
 (when window-system
-  (set-frame-parameter nil 'alpha 90))
+  (set-frame-parameter nil 'alpha 85))
 
 ; show the function name where the cursor is in
 (which-function-mode t)
