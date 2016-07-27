@@ -278,3 +278,6 @@
 ;; ruby-mode
 (setq ruby-insert-encoding-magic-comment nil)
 (add-hook 'ruby-mode-hook (lambda () (setq flycheck-checker 'ruby-rubocop)))
+
+;; php-mode
+(setq auto-mode-alist (cons '("\\.php\\'" . php-mode) auto-mode-alist))
