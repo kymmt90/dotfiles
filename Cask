@@ -18,6 +18,7 @@
 (depends-on "magit")
 (depends-on "markdown-mode")
 (depends-on "migemo")
+(depends-on "php-mode")
 (depends-on "popup")
 (depends-on "python-mode")
 (depends-on "rbenv")
