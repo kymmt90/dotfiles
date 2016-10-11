@@ -10,7 +10,7 @@
 (cask-initialize)
 
 (setq exec-path (append exec-path '("/usr/local/bin")))
-
+(setq exec-path (append exec-path '("~/.rbenv/shims")))
 
 ; save history of buffers
 (savehist-mode t)
@@ -209,13 +209,17 @@
   (global-set-key (kbd "C-x c") 'smart-compile)
   (global-set-key (kbd "C-x C-m") (kbd "C-x c C-m")))
 
-;; Flycheck
-(add-hook 'after-init-hook #'global-flycheck-mode)
+;; inf-ruby
+(setq inf-ruby-default-implementation "pry")
 
 ;; rbenv
+(setq rbenv-installation-dir "/usr/local/rbenv")
 (when (require 'rbenv nil t)
   (global-rbenv-mode)
-  (rbenv-use-global))
+  (rbenv-use "2.3.1"))
+
+;; Flycheck
+(add-hook 'after-init-hook #'global-flycheck-mode)
 
 ; emacs-lisp-mode
 (add-hook 'emacs-lisp-mode-hook
