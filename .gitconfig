@@ -25,6 +25,7 @@
 	p    = push
 	s    = show
 	st   = status
+	clean-branch = !git branch | grep -v '*' | gxargs --verbose -n 1 git branch -d
 [pager]
 	diff = diff-highlight | less
 	log  = diff-highlight | less
