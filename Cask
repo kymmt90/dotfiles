@@ -15,6 +15,7 @@
 (depends-on "helm-ag")
 (depends-on "helm-migemo")
 (depends-on "io-mode")
+(depends-on "js2-mode")
 (depends-on "magit")
 (depends-on "markdown-mode")
 (depends-on "migemo")
