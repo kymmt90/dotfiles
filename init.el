@@ -271,10 +271,16 @@
 
 ;; js2-mode
 (setq auto-mode-alist (cons '("\\.js\\'" . js2-mode) auto-mode-alist))
-(defun my-js2-hook()
+(defun my-js2-mode-hook()
   (setq-default indent-tabs-mode nil)
-  (setq js2-basic-offset 2))
-(add-hook 'js2-mode-hook 'my-js2-hook)
+  (setq js2-basic-offset 2)
+  (setq js2-include-browser-externs nil)
+  (setq js2-mode-show-parse-errors nil)
+  (setq js2-mode-show-strict-warnings nil)
+  (setq js2-highlight-external-variables nil)
+  (setq js2-include-jslint-globals nil))
+(add-hook 'js2-mode-hook 'my-js2-mode-hook)
+(setq-default flycheck-disabled-checkers '(javascript-jshint javascript-jscs))
 
 ;; web-mode
 (when (require 'web-mode nil t)
