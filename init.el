@@ -9,8 +9,7 @@
 (require 'cask "~/.cask/cask.el")
 (cask-initialize)
 
-(setq exec-path (append exec-path '("/usr/local/bin")))
-(setq exec-path (append exec-path '("~/.rbenv/shims")))
+(exec-path-from-shell-initialize)
 
 ; save history of buffers
 (savehist-mode t)
