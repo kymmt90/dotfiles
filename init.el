@@ -218,6 +218,7 @@
   (rbenv-use "2.3.1"))
 
 ;; Flycheck
+(require 'flycheck)
 (add-hook 'after-init-hook #'global-flycheck-mode)
 
 ; emacs-lisp-mode
@@ -310,3 +311,18 @@
 
 ;; php-mode
 (setq auto-mode-alist (cons '("\\.php\\'" . php-mode) auto-mode-alist))
+
+;; textlint
+(flycheck-define-checker textlint
+  "A proofreading checker using textlint command."
+  :command ("textlint" "--format" "unix" source)
+  :error-patterns ((error line-start
+                          (file-name) ":" line ":" column ": " (message)
+                          line-end)
+                   (warning line-start
+                          (file-name) ":" line ":" column ": " (message)
+                          line-end))
+  :modes (markdown-mode))
+(add-to-list 'flycheck-checkers 'textlint)
+(add-hook 'markdown-mode-hook '(lambda ()
+                                 (flycheck-select-checker 'textlint)))
