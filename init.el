@@ -229,14 +229,6 @@
                (setq eldoc-echo-area-use-multiline-p t)
                (turn-on-eldoc-mode))))
 
-; set the style "stroustrup" to C, C++, Java
-(defun my-c-mode-hook ()
-  (c-set-style "stroustrup")
-  (setq indent-tabs-mode nil))
-(add-hook 'c-mode-hook 'my-c-mode-hook)
-(add-hook 'c++-mode-hook 'my-c-mode-hook)
-(add-hook 'java-mode-hook 'my-c-mode-hook)
-
 ; markdown-mode
 (setq auto-mode-alist (cons '("\\.md\\'" . markdown-mode) auto-mode-alist))
 (setq markdown-command "/usr/local/bin/markdown")
