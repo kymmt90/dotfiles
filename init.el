@@ -302,7 +302,12 @@
 (add-hook 'robe-mode-hook 'ac-robe-setup)
 
 ;; php-mode
-(setq auto-mode-alist (cons '("\\.php\\'" . php-mode) auto-mode-alist))
+(when (require 'php-mode nil t)
+  (defun php-indent-hook ()
+    (c-set-offset 'case-label '+)
+    (c-set-offset 'arglist-intro '+)
+    (c-set-offset 'arglist-close 0))
+  (add-hook 'php-mode-hook 'php-indent-hook))
 
 ;; textlint
 (flycheck-define-checker textlint
