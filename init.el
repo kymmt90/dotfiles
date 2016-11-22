@@ -306,6 +306,11 @@
     (c-set-offset 'arglist-close 0))
   (add-hook 'php-mode-hook 'php-indent-hook))
 
+;; go-mode
+(when (require 'go-mode nil t)
+  (add-to-list 'auto-mode-alist '("\\.go\\'" . go-mode))
+  (add-hook 'before-save-hook 'gofmt-before-save))
+
 ;; textlint
 (flycheck-define-checker textlint
   "A proofreading checker using textlint command."
