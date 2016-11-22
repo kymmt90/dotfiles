@@ -10,6 +10,7 @@
 (depends-on "exec-path-from-shell")
 (depends-on "flycheck")
 (depends-on "git-gutter")
+(depends-on "go-mode")
 (depends-on "haml-mode")
 (depends-on "haskell-mode")
 (depends-on "helm")
