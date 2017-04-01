@@ -102,13 +102,13 @@
 
 ; set ascii font
 (set-face-attribute 'default nil
-                    :family "Menlo"
-                    :height 140)
+                    :family "Source Han Code JP R"
+                    :height 120)
 
 ; set Hiragino Kaku Gothic ProN as Japanese set.
 (set-fontset-font
  nil 'japanese-jisx0208
- (font-spec :family "Hiragino Kaku Gothic ProN"))
+ (font-spec :family "Source Han Code JP R"))
 
 (setq default-tab-width 4)
 
