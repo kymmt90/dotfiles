@@ -326,3 +326,7 @@
 (add-hook 'markdown-mode-hook '(lambda ()
                                  (flycheck-select-checker 'textlint)))
 (put 'upcase-region 'disabled nil)
+
+;; slim-mode
+(when (require 'slim-mode nil t)
+  (add-to-list 'auto-mode-alist '("\\.slim?\\'" . web-mode)))
