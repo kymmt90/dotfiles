@@ -325,3 +325,4 @@
 (add-to-list 'flycheck-checkers 'textlint)
 (add-hook 'markdown-mode-hook '(lambda ()
                                  (flycheck-select-checker 'textlint)))
+(put 'upcase-region 'disabled nil)
