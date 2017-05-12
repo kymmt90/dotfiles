@@ -330,3 +330,7 @@
 ;; slim-mode
 (when (require 'slim-mode nil t)
   (add-to-list 'auto-mode-alist '("\\.slim?\\'" . web-mode)))
+
+;; typescript-mode
+(when (require 'typescript-mode nil t)
+  (add-to-list 'auto-mode-alist '("\\.ts?\\'" . typescript-mode)))
