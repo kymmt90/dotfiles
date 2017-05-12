@@ -29,5 +29,6 @@
 (depends-on "robe")
 (depends-on "smart-compile")
 (depends-on "smartparens")
+(depends-on "typescript-mode")
 (depends-on "web-mode")
 (depends-on "yaml-mode")
