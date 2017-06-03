@@ -14,5 +14,7 @@
 	show = diff-highlight | less
 [push]
 	default = simple
+[status]
+	showUntrackedFiles = all
 [help]
 	autocorrect = 1
