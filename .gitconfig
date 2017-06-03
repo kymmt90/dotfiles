@@ -7,24 +7,6 @@
 [color]
 	ui = true
 [alias]
-	ae   = add -e
-	ap   = add -p
-	br   = branch
-	ci   = commit
-	cim  = commit -m
-	ciam = commit -am
-	co   = checkout
-	cb   = checkout -b
-	di   = diff
-	dc   = diff --cached
-	gr   = grep -n
-	l    = log
-	m    = merge
-	ol   = log --oneline
-	olg  = log --oneline --graph
-	p    = push
-	s    = show
-	st   = status
 	clean-branch = !git branch | grep -v '*' | gxargs --verbose -n 1 git branch -d
 [pager]
 	diff = diff-highlight | less
