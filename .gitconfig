@@ -1,5 +1,5 @@
 [user]
-	name  = Kohei Yamamoto
+	name = Kohei Yamamoto
 	email = kymmt90@gmail.com
 [core]
 	editor = vi
@@ -8,10 +8,6 @@
 	ui = true
 [alias]
 	clean-branch = !git branch | grep -v '*' | gxargs --verbose -n 1 git branch -d
-[pager]
-	diff = diff-highlight | less
-	log  = diff-highlight | less
-	show = diff-highlight | less
 [push]
 	default = simple
 [status]
