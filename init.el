@@ -307,6 +307,7 @@
   (add-hook 'php-mode-hook 'php-indent-hook))
 
 ;; go-mode
+(setq gofmt-command "goimports")
 (when (require 'go-mode nil t)
   (add-to-list 'auto-mode-alist '("\\.go\\'" . go-mode))
   (add-hook 'before-save-hook 'gofmt-before-save))
