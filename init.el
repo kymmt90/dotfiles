@@ -307,6 +307,8 @@
   (add-hook 'php-mode-hook 'php-indent-hook))
 
 ;; go-mode
+(exec-path-from-shell-copy-env "GOROOT")
+(exec-path-from-shell-copy-env "GOPATH")
 (setq gofmt-command "goimports")
 (when (require 'go-mode nil t)
   (add-to-list 'auto-mode-alist '("\\.go\\'" . go-mode))
