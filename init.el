@@ -317,22 +317,6 @@
   (add-to-list 'auto-mode-alist '("\\.go\\'" . go-mode))
   (add-hook 'before-save-hook 'gofmt-before-save))
 
-;; textlint
-(flycheck-define-checker textlint
-  "A proofreading checker using textlint command."
-  :command ("textlint" "--format" "unix" source)
-  :error-patterns ((error line-start
-                          (file-name) ":" line ":" column ": " (message)
-                          line-end)
-                   (warning line-start
-                          (file-name) ":" line ":" column ": " (message)
-                          line-end))
-  :modes (markdown-mode))
-(add-to-list 'flycheck-checkers 'textlint)
-(add-hook 'markdown-mode-hook '(lambda ()
-                                 (flycheck-select-checker 'textlint)))
-(put 'upcase-region 'disabled nil)
-
 ;; slim-mode
 (when (require 'slim-mode nil t)
   (add-to-list 'auto-mode-alist '("\\.slim?\\'" . web-mode)))
