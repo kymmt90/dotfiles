@@ -14,5 +14,7 @@
 	showUntrackedFiles = all
 [help]
 	autocorrect = 1
+[ghq]
+	root = ~/Repositories
 [ghq "https://git.pepabo.com/"]
 	vcs = git
