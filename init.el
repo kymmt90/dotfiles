@@ -115,9 +115,9 @@
 
 (setq default-tab-width 4)
 
-(show-paren-mode t)
-(set-face-background 'show-paren-match-face nil)
-(set-face-underline-p 'show-paren-match-face "yellow")
+(show-paren-mode 1)
+(set-face-background 'show-paren-match (face-background 'default))
+(set-face-underline-p 'show-paren-match "yellow")
 
 ; display highlight of parentheses quickly
 (setq show-paren-delay 0)
