@@ -11,6 +11,7 @@ brew 'heroku'
 brew 'jq'
 brew 'mas'
 brew 'peco'
+brew 'pssh'
 
 cask 'discord'
 cask 'docker'
