@@ -1,6 +1,7 @@
 cask_args appdir: '/Applications'
 tap 'homebrew/cask'
 
+brew 'cask'
 brew 'curl'
 brew 'fish'
 brew 'ghq'
