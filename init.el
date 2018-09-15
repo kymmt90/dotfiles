@@ -33,6 +33,9 @@
 ; display size of file
 (size-indication-mode t)
 
+; line truncation
+(setq-default truncate-partial-width-windows t)
+(setq-default truncate-lines t)
 
 ; swap meta key and super key
 (setq ns-command-modifier (quote meta))
