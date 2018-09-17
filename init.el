@@ -13,6 +13,11 @@
 
 (setq confirm-kill-emacs 'yes-or-no-p)
 
+(when window-system
+  (require 'server)
+  (unless (eq (server-running-p) 't)
+    (server-start)))
+
 ; save history of buffers
 (savehist-mode t)
 
