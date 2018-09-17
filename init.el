@@ -11,6 +11,8 @@
 
 (exec-path-from-shell-initialize)
 
+(setq confirm-kill-emacs 'yes-or-no-p)
+
 ; save history of buffers
 (savehist-mode t)
 
