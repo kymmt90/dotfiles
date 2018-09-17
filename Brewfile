@@ -12,6 +12,8 @@ brew 'jq'
 brew 'mas'
 brew 'peco'
 brew 'pssh'
+brew 'rbenv'
+brew 'ruby-build'
 
 cask 'discord'
 cask 'docker'
