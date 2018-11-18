@@ -242,6 +242,7 @@
 ; markdown-mode
 (setq auto-mode-alist (cons '("\\.md\\'" . markdown-mode) auto-mode-alist))
 (setq markdown-command "/usr/local/bin/markdown")
+(add-hook 'markdown-mode-hook (lambda () (setq truncate-lines nil)))
 
 ; prolog-mode
 (setq auto-mode-alist (cons '("\\.pl\\'" . prolog-mode) auto-mode-alist))
