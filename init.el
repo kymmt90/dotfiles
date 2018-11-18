@@ -41,8 +41,8 @@
 (size-indication-mode t)
 
 ; line truncation
-(setq-default truncate-partial-width-windows t)
-(setq-default truncate-lines t)
+(set-default 'truncate-lines t)
+(setq truncate-partial-width-windows nil)
 
 ; swap meta key and super key
 (setq ns-command-modifier (quote meta))
