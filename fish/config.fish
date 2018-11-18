@@ -8,3 +8,4 @@ set __fish_git_prompt_showcolorhints 'yes'
 rbenv init - | source
 
 set -x PATH $HOME/.nodebrew/current/bin $PATH
+set -x PATH /usr/local/share/git-core/contrib/diff-highlight $PATH
