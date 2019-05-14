@@ -227,10 +227,6 @@
   (global-rbenv-mode)
   (rbenv-use "2.3.1"))
 
-;; Flycheck
-(require 'flycheck)
-(add-hook 'after-init-hook #'global-flycheck-mode)
-
 ; emacs-lisp-mode
 (add-hook 'emacs-lisp-mode-hook
           '(lambda ()
@@ -284,7 +280,6 @@
   (setq js2-highlight-external-variables nil)
   (setq js2-include-jslint-globals nil))
 (add-hook 'js2-mode-hook 'my-js2-mode-hook)
-(setq-default flycheck-disabled-checkers '(javascript-jshint javascript-jscs))
 
 ;; web-mode
 (when (require 'web-mode nil t)
@@ -303,7 +298,6 @@
 
 ;; ruby-mode
 (setq ruby-insert-encoding-magic-comment nil)
-(setq-default flycheck-disabled-checkers '(ruby ruby-rubylint ruby-rubocop))
 (add-hook 'ruby-mode-hook 'robe-mode)
 (autoload 'robe-mode "robe" "Code navigation, documentation lookup and completion for Ruby" t nil)
 (autoload 'ac-robe-setup "ac-robe" "auto-complete robe" nil nil)
