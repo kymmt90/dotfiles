@@ -265,7 +265,7 @@
 (add-hook 'csharp-mode-hook (lambda () (setq tab-width 4)))
 
 ;; yaml-mode
-(setq auto-mode-alist (cons '("\\.yml\\'" . yaml-mode) auto-mode-alist))
+(setq auto-mode-alist (cons '("\\.ya?ml\\'" . yaml-mode) auto-mode-alist))
 
 ;; haml-mode
 (setq auto-mode-alist (cons '("\\.haml\\'" . haml-mode) auto-mode-alist))
