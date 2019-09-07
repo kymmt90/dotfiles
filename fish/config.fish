@@ -10,3 +10,6 @@ rbenv init - | source
 set -x PATH $HOME/.nodebrew/current/bin $PATH
 set -x PATH /usr/local/share/git-core/contrib/diff-highlight $PATH
 set -x PATH /usr/local/opt/mysql@5.6/bin $PATH
+
+# The next line updates PATH for the Google Cloud SDK.
+if [ -f '/Users/kymmt90/google-cloud-sdk/path.fish.inc' ]; . '/Users/kymmt90/google-cloud-sdk/path.fish.inc'; end
