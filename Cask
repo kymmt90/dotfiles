@@ -7,6 +7,7 @@
 (depends-on "color-moccur")
 (depends-on "color-theme")
 (depends-on "csharp-mode")
+(depends-on "ddskk")
 (depends-on "exec-path-from-shell")
 (depends-on "flycheck")
 (depends-on "git-gutter")
