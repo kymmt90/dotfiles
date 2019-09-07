@@ -26,7 +26,6 @@
 (depends-on "popup")
 (depends-on "python-mode")
 (depends-on "rbenv")
-(depends-on "redo+")
 (depends-on "robe")
 (depends-on "smart-compile")
 (depends-on "smartparens")
