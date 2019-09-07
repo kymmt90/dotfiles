@@ -1,10 +1,11 @@
+tap "buildpack/tap"
 tap "heroku/brew"
 tap "homebrew/bundle"
 tap "homebrew/cask"
 tap "homebrew/core"
 tap "homebrew/services"
-# GNU Emacs text editor
-brew "emacs", args: ["with-cocoa"]
+# SSL/TLS cryptography library
+brew "openssl"
 # Emacs dependency management
 brew "cask"
 # Migemo is a tool that supports Japanese incremental search with Romaji
@@ -25,8 +26,6 @@ brew "haskell-stack"
 brew "hub"
 # Lightweight and flexible command-line JSON processor
 brew "jq"
-# SSL/TLS cryptography library
-brew "openssl"
 # GNOME XML library
 brew "libxml2"
 # Mac App Store command-line interface
@@ -51,12 +50,22 @@ brew "ruby-build"
 brew "rbenv"
 # Persistent key-value database, with built-in net interface
 brew "redis", restart_service: true
+# Tail multiple Kubernetes pods & their containers
+brew "stern"
+# User interface to the TELNET protocol (built from macOS Sierra sources)
+brew "telnet"
 # Display directories as trees (with optional color/HTML output)
 brew "tree"
+# Internet file retriever
+brew "wget"
 # JavaScript package manager
 brew "yarn"
+# A CLI for building apps using Cloud Native Buildpacks
+brew "buildpack/tap/pack"
 # Everything you need to get started with Heroku
 brew "heroku/brew/heroku"
+cask "1password-cli"
+cask "aquaskk"
 cask "discord"
 cask "docker"
 cask "emacs"
@@ -65,6 +74,7 @@ cask "graphiql"
 cask "insomnia"
 cask "karabiner-elements"
 cask "minikube"
+cask "ngrok"
 cask "psequel"
 cask "sequel-pro"
 cask "vagrant"
