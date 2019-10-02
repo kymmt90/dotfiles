@@ -2,7 +2,7 @@
 	name = Kohei Yamamoto
 	email = kymmt90@gmail.com
 [core]
-	editor = vi
+	editor = /Applications/Emacs.app/Contents/MacOS/bin/emacsclient
 	excludesfile = ~/.gitignore
 [color]
 	ui = true
