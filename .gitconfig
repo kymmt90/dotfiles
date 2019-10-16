@@ -16,6 +16,8 @@
         prune = true
 [push]
 	default = simple
+[rebase]
+        autosquash = true
 [status]
 	showUntrackedFiles = all
 [help]
