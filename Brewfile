@@ -12,14 +12,20 @@ brew "cask"
 brew "cmigemo"
 # Get a file from an HTTP, HTTPS or FTP server
 brew "curl"
+# Secure your credentials in environment variables
+brew "envchain"
 # User-friendly command-line shell for UNIX-like operating systems
 brew "fish"
 # Glorious Glasgow Haskell Compilation System
 brew "ghc"
+# Remote repository management made easy
+brew "ghq"
 # Distributed revision control system
 brew "git"
 # GNU Pretty Good Privacy (PGP) package
 brew "gnupg"
+# Open source programming language to build simple/reliable/efficient software
+brew "go"
 # The Haskell Tool Stack
 brew "haskell-stack"
 # Add GitHub support to git on the command-line
@@ -54,6 +60,8 @@ brew "redis", restart_service: true
 brew "stern"
 # User interface to the TELNET protocol (built from macOS Sierra sources)
 brew "telnet"
+# Multi-platform code-search similar to ack and ag
+brew "the_platinum_searcher"
 # Display directories as trees (with optional color/HTML output)
 brew "tree"
 # Internet file retriever
@@ -65,6 +73,7 @@ brew "buildpack/tap/pack"
 # Everything you need to get started with Heroku
 brew "heroku/brew/heroku"
 cask "1password-cli"
+cask "alacritty"
 cask "aquaskk"
 cask "discord"
 cask "docker"
