@@ -9,15 +9,15 @@
 [alias]
 	clean-branch = !git branch | grep -v '^\\* master' | xargs git branch -d
 [pager]
-        diff = diff-highlight | less
-        log = diff-highlight | less
-        show = diff-highlight | less
+	diff = diff-highlight | less
+	log = diff-highlight | less
+	show = diff-highlight | less
 [fetch]
-        prune = true
+	prune = true
 [push]
 	default = simple
 [rebase]
-        autosquash = true
+	autosquash = true
 [status]
 	showUntrackedFiles = all
 [help]
