@@ -5,6 +5,7 @@
 (depends-on "auto-complete")
 (depends-on "coffee-mode")
 (depends-on "color-moccur")
+(depends-on "color-theme-modern")
 (depends-on "csharp-mode")
 (depends-on "ddskk")
 (depends-on "exec-path-from-shell")

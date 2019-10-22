@@ -162,10 +162,9 @@
   (add-to-list 'dmoccur-exclusion-mask "\\.DS_Store")
   (add-to-list 'dmoccur-exclusion-mask "^#.+#$"))
 
-; Emacs theme
-(when (require 'color-theme nil t)
-  (color-theme-initialize)
-  (color-theme-dark-laptop))
+; color-theme-modern
+(load-theme 'dark-laptop t t)
+(enable-theme 'dark-laptop)
 
 ;; ag
 (when (require 'ag nil t)
