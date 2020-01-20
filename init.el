@@ -297,6 +297,8 @@
 (add-hook 'web-mode-hook 'my-web-mode-hook)
 
 ;; ruby-mode
+(when (require 'ruby-mode nil t)
+  (add-to-list 'auto-mode-alist '("\\.jb?\\'" . ruby-mode)))
 (setq ruby-insert-encoding-magic-comment nil)
 (add-hook 'ruby-mode-hook 'robe-mode)
 (autoload 'robe-mode "robe" "Code navigation, documentation lookup and completion for Ruby" t nil)
