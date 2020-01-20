@@ -4,20 +4,19 @@ tap "homebrew/bundle"
 tap "homebrew/cask"
 tap "homebrew/core"
 tap "homebrew/services"
-# SSL/TLS cryptography library
-brew "openssl"
+tap "k1low/tap"
 # Emacs dependency management
 brew "cask"
 # Migemo is a tool that supports Japanese incremental search with Romaji
 brew "cmigemo"
 # Get a file from an HTTP, HTTPS or FTP server
 brew "curl"
+# The official CLI for Amazon EKS
+brew "eksctl"
 # Secure your credentials in environment variables
 brew "envchain"
 # User-friendly command-line shell for UNIX-like operating systems
 brew "fish"
-# Glorious Glasgow Haskell Compilation System
-brew "ghc"
 # Remote repository management made easy
 brew "ghq"
 # Distributed revision control system
@@ -37,7 +36,7 @@ brew "libxml2"
 # Mac App Store command-line interface
 brew "mas"
 # Open source relational database management system
-brew "mysql@5.6", restart_service: true
+brew "mysql@5.6"
 # Platform built on V8 to build network applications
 brew "node"
 # Node.js version manager
@@ -72,6 +71,8 @@ brew "yarn"
 brew "buildpack/tap/pack"
 # Everything you need to get started with Heroku
 brew "heroku/brew/heroku"
+# tbls is a CI-Friendly tool for document a database, written in Go.
+brew "k1low/tap/tbls"
 cask "1password-cli"
 cask "alacritty"
 cask "aquaskk"
@@ -84,12 +85,13 @@ cask "insomnia"
 cask "karabiner-elements"
 cask "minikube"
 cask "ngrok"
+cask "notion"
 cask "psequel"
 cask "sequel-pro"
 cask "vagrant"
 cask "virtualbox"
-mas "1Password 7", id: 1333542190
 mas "Keynote", id: 409183694
+mas "Kindle", id: 405399194
 mas "LINE", id: 539883307
 mas "Numbers", id: 409203825
 mas "Pages", id: 409201541
