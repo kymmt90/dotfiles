@@ -1,3 +1,3 @@
 function r
-  ghq look (ghq list | peco)
+  cd (ghq list --full-path --exact | peco)
 end
