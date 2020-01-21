@@ -11,8 +11,6 @@ brew "cask"
 brew "cmigemo"
 # Get a file from an HTTP, HTTPS or FTP server
 brew "curl"
-# The official CLI for Amazon EKS
-brew "eksctl"
 # Secure your credentials in environment variables
 brew "envchain"
 # User-friendly command-line shell for UNIX-like operating systems
@@ -81,8 +79,7 @@ cask "graphiql"
 cask "insomnia"
 cask "karabiner-elements"
 cask "notion"
-cask "vagrant"
-cask "virtualbox"
+cask "visual-studio-code"
 mas "Keynote", id: 409183694
 mas "Kindle", id: 405399194
 mas "LINE", id: 539883307
