@@ -1,0 +1,19 @@
+#!/bin/sh
+
+set -eu
+
+type brew >/dev/null 2>&1
+if [ ! $? -eq 0 ]; then
+  /usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
+fi
+
+MITAMAE_VERSION="1.10.4"
+if [ ! -e bin/mitamae-x86_64-darwin ]; then
+  (cd bin; curl -sSL https://github.com/itamae-kitchen/mitamae/releases/download/v${MITAMAE_VERSION}/mitamae-x86_64-darwin.tar.gz | tar xvz)
+fi
+bin/mitamae-x86_64-darwin local recipe.rb
+
+brew bundle check
+if [ ! $? -eq 0 ]; then
+  brew bundle install
+fi
