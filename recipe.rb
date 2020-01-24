@@ -3,7 +3,7 @@ define :link_dotfile, cookbook: nil do
 
   link target do
     to File.expand_path("./cookbooks/#{params[:cookbook]}/files/#{params[:name]}")
-    not_if "test -L #{target}"
+    force true
   end
 end
 
