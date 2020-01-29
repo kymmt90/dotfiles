@@ -5,6 +5,8 @@ tap "homebrew/cask"
 tap "homebrew/core"
 tap "homebrew/services"
 tap "k1low/tap"
+# Cryptography and SSL/TLS Toolkit
+brew "openssl@1.1"
 # Emacs dependency management
 brew "cask"
 # Migemo is a tool that supports Japanese incremental search with Romaji
@@ -29,6 +31,8 @@ brew "haskell-stack"
 brew "hub"
 # Lightweight and flexible command-line JSON processor
 brew "jq"
+# Tool that can switch between kubectl contexts easily and create aliases
+brew "kubectx"
 # GNOME XML library
 brew "libxml2"
 # Mac App Store command-line interface
