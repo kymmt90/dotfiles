@@ -6,6 +6,10 @@ link_dotfile '.config/fish/config.fish' do
   cookbook 'fish'
 end
 
+link_dotfile '.config/fish/completions' do
+  cookbook 'fish'
+end
+
 link_dotfile '.config/fish/functions' do
   cookbook 'fish'
 end
