@@ -330,9 +330,9 @@
   (add-to-list 'auto-mode-alist '("\\.ts?\\'" . typescript-mode)))
 
 ;; ddskk
-(when (require 'skk nil t)
-  (setq default-input-method "japanese-skk")
-  (setq skk-server-host "localhost"
-        skk-server-portnum 1178
-        skk-server-report-response t)
-  (global-set-key (kbd "C-x C-j") 'skk-mode))
+;; (when (require 'skk nil t)
+;;   (setq default-input-method "japanese-skk")
+;;   (setq skk-server-host "localhost"
+;;         skk-server-portnum 1178
+;;         skk-server-report-response t)
+;;   (global-set-key (kbd "C-x C-j") 'skk-mode))
