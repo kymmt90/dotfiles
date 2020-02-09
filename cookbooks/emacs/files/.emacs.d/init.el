@@ -136,10 +136,6 @@
 (menu-bar-mode 0)
 (scroll-bar-mode 0)
 
-; configure transparence
-(when window-system
-  (set-frame-parameter nil 'alpha 85))
-
 ; show the function name where the cursor is in
 (which-function-mode t)
 
