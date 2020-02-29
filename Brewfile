@@ -1,12 +1,11 @@
 tap "buildpack/tap"
+tap "github/gh"
 tap "heroku/brew"
 tap "homebrew/bundle"
 tap "homebrew/cask"
 tap "homebrew/core"
 tap "homebrew/services"
 tap "k1low/tap"
-# Cryptography and SSL/TLS Toolkit
-brew "openssl@1.1"
 # Emacs dependency management
 brew "cask"
 # Migemo is a tool that supports Japanese incremental search with Romaji
@@ -15,12 +14,16 @@ brew "cmigemo"
 brew "curl"
 # Secure your credentials in environment variables
 brew "envchain"
+# Play, record, convert, and stream audio and video
+brew "ffmpeg"
 # User-friendly command-line shell for UNIX-like operating systems
 brew "fish"
 # Remote repository management made easy
 brew "ghq"
 # Distributed revision control system
 brew "git"
+# Render markdown on the CLI
+brew "glow"
 # GNU Pretty Good Privacy (PGP) package
 brew "gnupg"
 # Open source programming language to build simple/reliable/efficient software
@@ -71,6 +74,8 @@ brew "wget"
 brew "yarn"
 # A CLI for building apps using Cloud Native Buildpacks
 brew "buildpack/tap/pack"
+# GitHub CLI
+brew "github/gh/gh"
 # Everything you need to get started with Heroku
 brew "heroku/brew/heroku"
 # tbls is a CI-Friendly tool for document a database, written in Go.
@@ -79,11 +84,19 @@ cask "1password-cli"
 cask "aquaskk"
 cask "docker"
 cask "emacs"
+cask "firefox"
+cask "google-chrome"
 cask "graphiql"
 cask "insomnia"
 cask "karabiner-elements"
 cask "notion"
+cask "slack"
+cask "vagrant"
 cask "visual-studio-code"
+mas "1Password 7", id: 1333542190
+mas "Day One", id: 1055511498
+mas "GarageBand", id: 682658836
+mas "iMovie", id: 408981434
 mas "Keynote", id: 409183694
 mas "Kindle", id: 405399194
 mas "LINE", id: 539883307
