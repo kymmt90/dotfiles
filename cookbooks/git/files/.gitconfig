@@ -1,6 +1,7 @@
 [user]
 	name = Kohei Yamamoto
 	email = kymmt90@gmail.com
+	signingkey = B71C8C99666CD704
 [core]
 	editor = /Applications/Emacs.app/Contents/MacOS/bin/emacsclient
 	excludesfile = ~/.gitignore
@@ -26,3 +27,5 @@
 	root = ~/Repositories
 [ghq "https://git.pepabo.com/"]
 	vcs = git
+[commit]
+	gpgsign = true

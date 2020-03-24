@@ -16,5 +16,12 @@ set -x PATH $HOME/.cabal/bin:$GHCUP_INSTALL_BASE_PREFIX/.ghcup/bin $PATH
 
 eval (ssh-agent -c) >/dev/null
 
+set -x GPG_TTY (tty)
+set -x GPG_AGENT_INFO $HOME/.gnupg/S.gpg-agent:0:1
+if [ ! (pgrep -x -u $USER "gpg-agent" | head -1) ]
+  set -el DISPLAY
+  gpg-connect-agent /bye
+end
+
 # The next line updates PATH for the Google Cloud SDK.
 if [ -f '/Users/kymmt90/google-cloud-sdk/path.fish.inc' ]; . '/Users/kymmt90/google-cloud-sdk/path.fish.inc'; end
