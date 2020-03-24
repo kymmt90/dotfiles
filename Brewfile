@@ -48,6 +48,8 @@ brew "node"
 brew "nodebrew"
 # Simplistic interactive filtering tool
 brew "peco"
+# Pinentry for GPG on Mac
+brew "pinentry-mac"
 # Python dependency management tool
 brew "pipenv"
 # Object-relational database system
@@ -62,7 +64,7 @@ brew "rbenv"
 brew "redis", restart_service: true
 # Tail multiple Kubernetes pods & their containers
 brew "stern"
-# User interface to the TELNET protocol (built from macOS Sierra sources)
+# User interface to the TELNET protocol
 brew "telnet"
 # Multi-platform code-search similar to ack and ag
 brew "the_platinum_searcher"
