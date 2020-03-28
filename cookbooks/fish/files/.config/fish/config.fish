@@ -13,6 +13,7 @@ set -x PATH /usr/local/opt/mysql@5.6/bin $PATH
 set -x PATH /usr/local/opt/openssl@1.1/bin $PATH
 set -x GHCUP_INSTALL_BASE_PREFIX $HOME
 set -x PATH $HOME/.cabal/bin:$GHCUP_INSTALL_BASE_PREFIX/.ghcup/bin $PATH
+set -x PATH /usr/local/opt/coreutils/libexec/gnubin $PATH
 
 eval (ssh-agent -c) >/dev/null
 
