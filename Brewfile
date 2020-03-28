@@ -10,6 +10,8 @@ tap "k1low/tap"
 brew "cask"
 # Migemo is a tool that supports Japanese incremental search with Romaji
 brew "cmigemo"
+# GNU File, Shell, and Text utilities
+brew "coreutils"
 # Get a file from an HTTP, HTTPS or FTP server
 brew "curl"
 # Secure your credentials in environment variables
