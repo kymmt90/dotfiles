@@ -17,6 +17,10 @@ set -x PATH /usr/local/opt/coreutils/libexec/gnubin $PATH
 
 eval (ssh-agent -c) >/dev/null
 
+function on_exit --on-event fish_exit
+  ssh-agent -k >/dev/null
+end
+
 set -x GPG_TTY (tty)
 set -x GPG_AGENT_INFO $HOME/.gnupg/S.gpg-agent:0:1
 if [ ! (pgrep -x -u $USER "gpg-agent" | head -1) ]
