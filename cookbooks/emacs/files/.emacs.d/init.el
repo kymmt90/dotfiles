@@ -268,6 +268,7 @@
 (setq auto-mode-alist (cons '("\\.js\\'" . js2-mode) auto-mode-alist))
 (defun my-js2-mode-hook()
   (setq-default indent-tabs-mode nil)
+  (setq tab-width 2)
   (setq js2-basic-offset 2)
   (setq js2-include-browser-externs nil)
   (setq js2-mode-show-parse-errors nil)
