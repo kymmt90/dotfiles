@@ -1,5 +1,7 @@
 set -x EDITOR emacs
 
+ulimit -n 1024
+
 set __fish_git_prompt_showdirtystate 'yes'
 set __fish_git_prompt_showupstream 'yes'
 set __fish_git_prompt_showuntrackedfiles 'yes'
