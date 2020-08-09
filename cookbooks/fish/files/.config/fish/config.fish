@@ -13,6 +13,7 @@ set -x PATH $HOME/.nodebrew/current/bin $PATH
 set -x PATH /usr/local/share/git-core/contrib/diff-highlight $PATH
 set -x PATH /usr/local/opt/mysql@5.6/bin $PATH
 set -x PATH /usr/local/opt/openssl@1.1/bin $PATH
+set -x PATH /usr/local/sbin $PATH
 set -x GHCUP_INSTALL_BASE_PREFIX $HOME
 set -x PATH $HOME/.cabal/bin:$GHCUP_INSTALL_BASE_PREFIX/.ghcup/bin $PATH
 set -x NODE_PATH $HOME/.nodebrew/current/lib/node_modules $NODE_PATH
