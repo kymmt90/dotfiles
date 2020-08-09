@@ -15,5 +15,5 @@ bin/mitamae-x86_64-darwin local recipe.rb
 
 brew bundle check
 if [ $? -ne 0 ]; then
-  brew bundle install
+  brew bundle install --no-upgrade
 fi
