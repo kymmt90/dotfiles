@@ -10,6 +10,8 @@ tap "k1low/tap"
 brew "cask"
 # Migemo is a tool that supports Japanese incremental search with Romaji
 brew "cmigemo"
+# Dependency Manager for PHP
+brew "composer"
 # GNU File, Shell, and Text utilities
 brew "coreutils"
 # Get a file from an HTTP, HTTPS or FTP server
@@ -50,6 +52,8 @@ brew "node"
 brew "nodebrew"
 # Simplistic interactive filtering tool
 brew "peco"
+# General-purpose scripting language
+brew "php"
 # Pinentry for GPG on Mac
 brew "pinentry-mac"
 # Python dependency management tool
@@ -97,7 +101,6 @@ cask "notion"
 cask "slack"
 cask "vagrant"
 cask "visual-studio-code"
-mas "1Password 7", id: 1333542190
 mas "Day One", id: 1055511498
 mas "GarageBand", id: 682658836
 mas "iMovie", id: 408981434
