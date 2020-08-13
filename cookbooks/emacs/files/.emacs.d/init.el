@@ -9,7 +9,8 @@
 (require 'cask "/usr/local/share/emacs/site-lisp/cask/cask.el")
 (cask-initialize)
 
-(exec-path-from-shell-initialize)
+(when (memq window-system '(mac ns x))
+  (exec-path-from-shell-initialize))
 
 (setq confirm-kill-emacs 'yes-or-no-p)
 
@@ -190,11 +191,6 @@
 (when (require 'helm-ag nil t)
   (global-set-key (kbd "C-c s") 'helm-ag))
 
-; auto-complete
-(when (require 'auto-complete-config nil t)
-  (ac-config-default)
-  (setq ac-use-menu-map t))
-
 ; smartparens
 (when (require 'smartparens-config nil t)
   (smartparens-global-mode 1))
@@ -219,8 +215,7 @@
 ;; rbenv
 (setq rbenv-installation-dir "/usr/local/rbenv")
 (when (require 'rbenv nil t)
-  (global-rbenv-mode)
-  (rbenv-use "2.3.1"))
+  (global-rbenv-mode))
 
 ; emacs-lisp-mode
 (add-hook 'emacs-lisp-mode-hook
@@ -297,10 +292,6 @@
 (when (require 'ruby-mode nil t)
   (add-to-list 'auto-mode-alist '("\\.jb?\\'" . ruby-mode)))
 (setq ruby-insert-encoding-magic-comment nil)
-(add-hook 'ruby-mode-hook 'robe-mode)
-(autoload 'robe-mode "robe" "Code navigation, documentation lookup and completion for Ruby" t nil)
-(autoload 'ac-robe-setup "ac-robe" "auto-complete robe" nil nil)
-(add-hook 'robe-mode-hook 'ac-robe-setup)
 
 ;; php-mode
 (when (require 'php-mode nil t)
@@ -333,3 +324,21 @@
 ;;         skk-server-portnum 1178
 ;;         skk-server-report-response t)
 ;;   (global-set-key (kbd "C-x C-j") 'skk-mode))
+
+;; company-mode
+(when (require 'company nil t)
+  (setq company-minimum-prefix-length 2)
+  (setq company-selection-wrap-around t)
+  (setq company-tooltip-maximum-width 50)
+  (global-set-key (kbd "C-M-i") 'company-complete)
+  (define-key company-active-map (kbd "C-n") 'company-select-next)
+  (define-key company-active-map (kbd "C-p") 'company-select-previous)
+  (define-key company-search-map (kbd "C-n") 'company-select-next)
+  (define-key company-search-map (kbd "C-p") 'company-select-previous)
+  (define-key company-active-map (kbd "C-i") 'company-complete-selection)
+  (add-hook 'after-init-hook 'global-company-mode)
+  (company-quickhelp-mode))
+
+;; eglot
+(when (require 'eglot nil t)
+  (add-hook 'ruby-mode-hook 'eglot-ensure))
