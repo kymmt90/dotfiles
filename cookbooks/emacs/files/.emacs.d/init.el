@@ -65,7 +65,6 @@
 (define-key global-map (kbd "M-h") 'backward-kill-word)
 (define-key global-map (kbd "M-g") 'goto-line)
 
-
 ; revert buffer automatically when file was changed
 (global-auto-revert-mode t)
 
@@ -110,7 +109,6 @@
 
 (global-set-key (kbd "C-j") 'newline-and-indent)
 
-
 ; set ascii font
 (set-face-attribute 'default nil
                     :family "Source Han Code JP R"
@@ -143,7 +141,6 @@
 (setq-default indicate-buffer-boundaries 'left)
 
 (desktop-save-mode 1)
-
 
 ; Redo+
 (when (require 'redo+ nil t)
@@ -316,14 +313,6 @@
 ;; typescript-mode
 (when (require 'typescript-mode nil t)
   (add-to-list 'auto-mode-alist '("\\.ts?\\'" . typescript-mode)))
-
-;; ddskk
-;; (when (require 'skk nil t)
-;;   (setq default-input-method "japanese-skk")
-;;   (setq skk-server-host "localhost"
-;;         skk-server-portnum 1178
-;;         skk-server-report-response t)
-;;   (global-set-key (kbd "C-x C-j") 'skk-mode))
 
 ;; company-mode
 (when (require 'company nil t)
