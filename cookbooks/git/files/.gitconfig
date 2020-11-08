@@ -3,7 +3,7 @@
 	email = kymmt90@gmail.com
 	signingkey = B71C8C99666CD704
 [core]
-	editor = /Applications/Emacs.app/Contents/MacOS/bin/emacsclient
+	editor = code --wait
 	excludesfile = ~/.gitignore
 [color]
 	ui = true
