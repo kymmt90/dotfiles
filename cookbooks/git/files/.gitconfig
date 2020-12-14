@@ -29,5 +29,6 @@
 	vcs = git
 [commit]
 	gpgsign = true
+	verbose = true
 [pull]
 	rebase = false
