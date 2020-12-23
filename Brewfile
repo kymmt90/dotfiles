@@ -16,10 +16,6 @@ brew "glib"
 brew "python@3.8"
 # Validating, recursive, caching DNS resolver
 brew "unbound"
-# Emacs dependency management
-brew "cask"
-# Migemo is a tool that supports Japanese incremental search with Romaji
-brew "cmigemo"
 # Dependency Manager for PHP
 brew "composer"
 # Generic template rendering and notifications with Consul
@@ -119,7 +115,6 @@ brew "k1low/tap/tbls"
 cask "1password-cli"
 cask "aquaskk"
 cask "docker"
-cask "emacs"
 cask "graphiql"
 cask "insomnia"
 cask "karabiner-elements"

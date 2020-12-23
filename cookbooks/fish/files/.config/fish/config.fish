@@ -1,4 +1,4 @@
-set -x EDITOR emacs
+set -x EDITOR vi
 
 ulimit -n 1024
 
