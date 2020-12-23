@@ -5,7 +5,7 @@ tap "heroku/brew"
 tap "homebrew/bundle"
 tap "homebrew/cask"
 tap "homebrew/cask-versions"
-tap "homebrew/core"
+tap "homebrew/core", "https://github.com/Homebrew/homebrew-core.git"
 tap "homebrew/services"
 tap "k1low/tap"
 # Command-line interface for SQLite
@@ -50,8 +50,6 @@ brew "gnupg"
 brew "go"
 # Cross-platform program for developing Haskell projects
 brew "haskell-stack"
-# Add GitHub support to git on the command-line
-brew "hub"
 # Lightweight and flexible command-line JSON processor
 brew "jq"
 # Tool that can switch between kubectl contexts easily and create aliases
@@ -113,15 +111,17 @@ brew "heroku/brew/heroku"
 # tbls is a CI-Friendly tool for document a database, written in Go.
 brew "k1low/tap/tbls"
 cask "1password-cli"
-cask "aquaskk"
 cask "docker"
+cask "firefox"
+cask "google-chrome"
 cask "graphiql"
 cask "insomnia"
 cask "karabiner-elements"
-cask "notion"
+cask "slack"
 cask "vagrant"
 cask "visual-studio-code"
 mas "1Password 7", id: 1333542190
+mas "Be Focused", id: 973134470
 mas "Day One", id: 1055511498
 mas "GarageBand", id: 682658836
 mas "iMovie", id: 408981434
