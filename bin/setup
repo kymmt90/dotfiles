@@ -17,5 +17,5 @@ brew update
 
 brew bundle check
 if [ $? -ne 0 ]; then
-  brew bundle install --no-upgrade
+  brew bundle install --no-upgrade --no-lock
 fi
