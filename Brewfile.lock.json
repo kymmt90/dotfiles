@@ -11,10 +11,10 @@
         "revision": "830855e7b0bb123da2a6acda4275b8a5e378f331"
       },
       "homebrew/cask": {
-        "revision": "c337f1d905fb7e433e8613477b4588af5f5cf440"
+        "revision": "3e15fc69969f2e928414ad9251b81c6623b3635a"
       },
       "homebrew/core": {
-        "revision": "3a4b743a9a086b0c2bfd43fac304da57d777227e",
+        "revision": "318d04a47fe317820ae44c511cae1eaefdb8cd78",
         "options": {
           "clone_target": "https://github.com/Homebrew/homebrew-core.git"
         }
@@ -23,7 +23,7 @@
         "revision": "315ad6f1610401ccdd78c83534991541e531814b"
       },
       "k1low/tap": {
-        "revision": "db04b23608c14d68bf91b7937797e692f6a7efd0"
+        "revision": "b611e74b169e67edbaec5672b6781e0e96f03eba"
       },
       "github/gh": {
         "revision": "209f59cda890de69b74c224982591642c21323d3"
@@ -32,7 +32,7 @@
         "revision": "8bc8e41ea106e87794da4ba68a4d4694e552b430"
       },
       "homebrew/cask-versions": {
-        "revision": "c685e7d9e8e3826b038746b46f0ee744886c8688"
+        "revision": "96589a9514c50478551bb49decd514cf06ebfda5"
       }
     },
     "brew": {
@@ -111,6 +111,10 @@
             "big_sur": {
               "url": "https://homebrew.bintray.com/bottles/envchain-1.0.1.big_sur.bottle.tar.gz",
               "sha256": "0e3091b7e3202f68b9bca03aef6df8002048be8e7e6e77be736787e0c7393d7f"
+            },
+            "arm64_big_sur": {
+              "url": "https://homebrew.bintray.com/bottles/envchain-1.0.1.arm64_big_sur.bottle.tar.gz",
+              "sha256": "0a280127849e99bf3313f5d43b7bf1bf38cbffde964ca1c4e3968728b8a52cc8"
             },
             "catalina": {
               "url": "https://homebrew.bintray.com/bottles/envchain-1.0.1.catalina.bottle.tar.gz",
@@ -556,7 +560,7 @@
         }
       },
       "ruby-build": {
-        "version": "20201221",
+        "version": "20201225",
         "bottle": false
       },
       "rbenv": {
@@ -1228,6 +1232,10 @@
               "url": "https://homebrew.bintray.com/bottles/v8-8.7.220.29.big_sur.bottle.tar.gz",
               "sha256": "50f51a34a06ca28c52401df43275755396b7fdee7e8f18356cedf026884783eb"
             },
+            "arm64_big_sur": {
+              "url": "https://homebrew.bintray.com/bottles/v8-8.7.220.29.arm64_big_sur.bottle.tar.gz",
+              "sha256": "e98659632153492b81057e7c7b155f5b2c846536b606319a43c01844613f7466"
+            },
             "catalina": {
               "url": "https://homebrew.bintray.com/bottles/v8-8.7.220.29.catalina.bottle.tar.gz",
               "sha256": "19550a7952ac8e8882e746ec5c9cd17f8903a6e1e3859bd10c3255f373af4e13"
@@ -1292,7 +1300,7 @@
         }
       },
       "docker": {
-        "version": "2.1.0.5,40693",
+        "version": "2.4.0.0,48506",
         "options": {
           "full_name": "docker"
         }
@@ -1310,13 +1318,13 @@
         }
       },
       "insomnia": {
-        "version": "7.0.6",
+        "version": "2020.4.1",
         "options": {
           "full_name": "insomnia"
         }
       },
       "karabiner-elements": {
-        "version": "12.9.0",
+        "version": "12.10.0",
         "options": {
           "full_name": "karabiner-elements"
         }
@@ -1328,25 +1336,25 @@
         }
       },
       "visual-studio-code": {
-        "version": "1.47.3",
+        "version": "1.49.2",
         "options": {
           "full_name": "visual-studio-code"
         }
       },
       "firefox": {
-        "version": "72.0.2",
+        "version": "84.0.1",
         "options": {
           "full_name": "firefox"
         }
       },
       "google-chrome": {
-        "version": "79.0.3945.130",
+        "version": "87.0.4280.88,4280.88",
         "options": {
           "full_name": "google-chrome"
         }
       },
       "slack": {
-        "version": "4.2.0",
+        "version": "4.12.0",
         "options": {
           "full_name": "slack"
         }
@@ -1369,7 +1377,7 @@
       },
       "LINE": {
         "id": "539883307",
-        "version": "6.5.1"
+        "version": "6.4.0"
       },
       "Numbers": {
         "id": "409203825",
@@ -1393,7 +1401,7 @@
       },
       "GarageBand": {
         "id": "682658836",
-        "version": "10.3.5"
+        "version": "10.3.4"
       },
       "iMovie": {
         "id": "408981434",
@@ -1410,8 +1418,8 @@
       "catalina": {
         "HOMEBREW_VERSION": "2.7.0",
         "HOMEBREW_PREFIX": "/usr/local",
-        "Homebrew/homebrew-core": "3a4b743a9a086b0c2bfd43fac304da57d777227e",
-        "CLT": "12.0.31.1",
+        "Homebrew/homebrew-core": "318d04a47fe317820ae44c511cae1eaefdb8cd78",
+        "CLT": "12.0.32.27",
         "Xcode": "12.0",
         "macOS": "10.15.7"
       }
