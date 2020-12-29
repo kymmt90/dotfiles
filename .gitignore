@@ -1,2 +1,3 @@
 *.elc
 bin/mitamae-x86_64-darwin
+Brewfile.lock.json
