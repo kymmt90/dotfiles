@@ -59,6 +59,8 @@ brew "kubectx"
 brew "libpq"
 # GNOME XML library
 brew "libxml2"
+# YAML Parser
+brew "libyaml"
 # Mac App Store command-line interface
 brew "mas"
 # Simple tool to make locally trusted development certificates
