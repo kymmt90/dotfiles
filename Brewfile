@@ -1,5 +1,6 @@
 tap "aws/tap"
 tap "buildpack/tap"
+tap "getsentry/tools"
 tap "github/gh"
 tap "heroku/brew"
 tap "homebrew/bundle"
@@ -106,6 +107,8 @@ brew "yarn"
 brew "aws/tap/aws-sam-cli"
 # A CLI for building apps using Cloud Native Buildpacks
 brew "buildpack/tap/pack"
+# Sentry command-line client for some generic tasks
+brew "getsentry/tools/sentry-cli"
 # Everything you need to get started with Heroku
 brew "heroku/brew/heroku"
 # tbls is a CI-Friendly tool for document a database, written in Go.
