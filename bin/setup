@@ -7,7 +7,7 @@ if [ $? -ne 0 ]; then
   /usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
 fi
 
-MITAMAE_VERSION="1.11.7"
+MITAMAE_VERSION="1.12.3"
 if [ ! -e bin/mitamae-x86_64-darwin ]; then
   (cd bin; curl -sSL https://github.com/itamae-kitchen/mitamae/releases/download/v${MITAMAE_VERSION}/mitamae-x86_64-darwin.tar.gz | tar xvz)
 fi
