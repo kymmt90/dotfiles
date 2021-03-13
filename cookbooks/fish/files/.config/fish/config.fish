@@ -17,6 +17,7 @@ set -x PATH /usr/local/sbin $PATH
 set -x GHCUP_INSTALL_BASE_PREFIX $HOME
 set -x PATH $HOME/.cabal/bin:$GHCUP_INSTALL_BASE_PREFIX/.ghcup/bin $PATH
 set -x NODE_PATH $HOME/.nodebrew/current/lib/node_modules $NODE_PATH
+set -x PATH $HOME/go/bin $PATH
 
 eval (ssh-agent -c) >/dev/null
 
