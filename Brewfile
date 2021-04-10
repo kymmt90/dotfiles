@@ -9,14 +9,8 @@ tap "homebrew/cask-versions"
 tap "homebrew/core", "https://github.com/Homebrew/homebrew-core.git"
 tap "homebrew/services"
 tap "k1low/tap"
-# Command-line interface for SQLite
-brew "sqlite"
 # Core application library for C
 brew "glib"
-# Interpreted, interactive, object-oriented programming language
-brew "python@3.8"
-# Validating, recursive, caching DNS resolver
-brew "unbound"
 # Dependency Manager for PHP
 brew "composer"
 # Generic template rendering and notifications with Consul
@@ -27,12 +21,6 @@ brew "coreutils"
 brew "curl"
 # Secure your credentials in environment variables
 brew "envchain"
-# Generate introspection data for GObject libraries
-brew "gobject-introspection"
-# Subtitle renderer for the ASS/SSA subtitle format
-brew "libass"
-# Secure Reliable Transport
-brew "srt"
 # Play, record, convert, and stream audio and video
 brew "ffmpeg"
 # User-friendly command-line shell for UNIX-like operating systems
@@ -55,8 +43,6 @@ brew "haskell-stack"
 brew "jq"
 # Tool that can switch between kubectl contexts easily and create aliases
 brew "kubectx"
-# Postgres C API library
-brew "libpq"
 # GNOME XML library
 brew "libxml2"
 # YAML Parser
@@ -115,15 +101,27 @@ brew "getsentry/tools/sentry-cli"
 brew "heroku/brew/heroku"
 # tbls is a CI-Friendly tool for document a database, written in Go.
 brew "k1low/tap/tbls"
+# Command-line helper for the 1Password password manager
 cask "1password-cli"
+# Voice and text chat software
+cask "discord"
+# App to build and share containerized applications and microservices
 cask "docker"
+# Web browser
 cask "firefox"
+# Web browser
 cask "google-chrome"
+# Light, Electron-based Wrapper around GraphiQL
 cask "graphiql"
+# HTTP and GraphQL Client
 cask "insomnia"
+# Keyboard customizer
 cask "karabiner-elements"
+# Team communication and collaboration software
 cask "slack"
+# Development environment
 cask "vagrant"
+# Open-source code editor
 cask "visual-studio-code"
 mas "1Password 7", id: 1333542190
 mas "Be Focused", id: 973134470
