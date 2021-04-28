@@ -6,7 +6,7 @@ tap "heroku/brew"
 tap "homebrew/bundle"
 tap "homebrew/cask"
 tap "homebrew/cask-versions"
-tap "homebrew/core", "https://github.com/Homebrew/homebrew-core.git"
+tap "homebrew/core"
 tap "homebrew/services"
 tap "k1low/tap"
 # Core application library for C
@@ -75,6 +75,8 @@ brew "ruby-build"
 brew "rbenv"
 # Persistent key-value database, with built-in net interface
 brew "redis", restart_service: true
+# Database of common MIME types
+brew "shared-mime-info"
 # Tail multiple Kubernetes pods & their containers
 brew "stern"
 # User interface to the TELNET protocol
@@ -103,6 +105,8 @@ brew "heroku/brew/heroku"
 brew "k1low/tap/tbls"
 # Command-line helper for the 1Password password manager
 cask "1password-cli"
+# Web security testing toolkit
+cask "burp-suite"
 # Voice and text chat software
 cask "discord"
 # App to build and share containerized applications and microservices
