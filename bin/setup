@@ -8,7 +8,17 @@ if [ $? -ne 0 ]; then
 fi
 
 MITAMAE_VERSION="1.12.3"
-if [ ! -e bin/mitamae-x86_64-darwin ]; then
+
+if [ -e bin/mitamae-x86_64-darwin ]; then
+  MITAMAE_VERSION_STDOUT=$(bin/mitamae-x86_64-darwin version)
+  VERSION_REGEX="([0-9]+\.[0-9]+\.[0-9]+)"
+
+  if [[ $MITAMAE_VERSION_STDOUT =~ $VERSION_REGEX ]]; then
+    CURRENT_MITAMAE_VERSION=${BASH_REMATCH[1]}
+  fi
+fi
+
+if [ ! -e bin/mitamae-x86_64-darwin ] || [ $MITAMAE_VERSION != $CURRENT_MITAMAE_VERSION ]; then
   (cd bin; curl -sSL https://github.com/itamae-kitchen/mitamae/releases/download/v${MITAMAE_VERSION}/mitamae-x86_64-darwin.tar.gz | tar xvz)
 fi
 bin/mitamae-x86_64-darwin local recipe.rb
