@@ -2,6 +2,7 @@ tap "aws/tap"
 tap "buildpack/tap"
 tap "getsentry/tools"
 tap "github/gh"
+tap "hashicorp/tap"
 tap "heroku/brew"
 tap "homebrew/bundle"
 tap "homebrew/cask"
@@ -9,6 +10,9 @@ tap "homebrew/cask-versions"
 tap "homebrew/core"
 tap "homebrew/services"
 tap "k1low/tap"
+tap "pyama86/kagiana"
+# Run your GitHub Actions locally 🚀
+brew "act"
 # Core application library for C
 brew "glib"
 # Dependency Manager for PHP
@@ -17,10 +21,18 @@ brew "composer"
 brew "consul-template"
 # GNU File, Shell, and Text utilities
 brew "coreutils"
-# Get a file from an HTTP, HTTPS or FTP server
-brew "curl"
 # Secure your credentials in environment variables
 brew "envchain"
+# Validating, recursive, caching DNS resolver
+brew "unbound"
+# Generate introspection data for GObject libraries
+brew "gobject-introspection"
+# OpenType text shaping engine
+brew "harfbuzz"
+# Subtitle renderer for the ASS/SSA subtitle format
+brew "libass"
+# Secure Reliable Transport
+brew "srt"
 # Play, record, convert, and stream audio and video
 brew "ffmpeg"
 # User-friendly command-line shell for UNIX-like operating systems
@@ -33,12 +45,18 @@ brew "ghq"
 brew "git"
 # Render markdown on the CLI
 brew "glow"
+# GNU implementation of the famous stream editor
+brew "gnu-sed"
 # GNU Pretty Good Privacy (PGP) package
 brew "gnupg"
 # Open source programming language to build simple/reliable/efficient software
 brew "go"
 # Cross-platform program for developing Haskell projects
 brew "haskell-stack"
+# Database of common MIME types
+brew "shared-mime-info"
+# Tools and libraries to manipulate images in many formats
+brew "imagemagick"
 # Lightweight and flexible command-line JSON processor
 brew "jq"
 # Tool that can switch between kubectl contexts easily and create aliases
@@ -49,10 +67,14 @@ brew "libxml2"
 brew "libyaml"
 # Mac App Store command-line interface
 brew "mas"
+# High performance, distributed memory object caching system
+brew "memcached"
 # Simple tool to make locally trusted development certificates
 brew "mkcert"
 # Open source relational database management system
 brew "mysql@5.6"
+# Network Kanji code conversion Filter (NKF)
+brew "nkf"
 # Platform built on V8 to build network applications
 brew "node"
 # Node.js version manager
@@ -69,14 +91,14 @@ brew "pipenv"
 brew "postgresql"
 # Parallel versions of OpenSSH and related tools
 brew "pssh"
+# Interpreted, interactive, object-oriented programming language
+brew "python@3.8"
 # Install various Ruby versions and implementations
 brew "ruby-build"
 # Ruby version manager
 brew "rbenv"
 # Persistent key-value database, with built-in net interface
 brew "redis", restart_service: true
-# Database of common MIME types
-brew "shared-mime-info"
 # Tail multiple Kubernetes pods & their containers
 brew "stern"
 # User interface to the TELNET protocol
@@ -103,6 +125,8 @@ brew "getsentry/tools/sentry-cli"
 brew "heroku/brew/heroku"
 # tbls is a CI-Friendly tool for document a database, written in Go.
 brew "k1low/tap/tbls"
+# Kagiana for Vault
+brew "pyama86/kagiana/kagiana"
 # Command-line helper for the 1Password password manager
 cask "1password-cli"
 # Web security testing toolkit
