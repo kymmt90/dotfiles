@@ -7,12 +7,14 @@ tap "heroku/brew"
 tap "homebrew/bundle"
 tap "homebrew/cask"
 tap "homebrew/cask-versions"
-tap "homebrew/core"
+tap "homebrew/core", "https://github.com/Homebrew/homebrew-core.git"
 tap "homebrew/services"
 tap "k1low/tap"
 tap "pyama86/kagiana"
 # Run your GitHub Actions locally 🚀
 brew "act"
+# Official Amazon AWS command-line interface
+brew "awscli"
 # Core application library for C
 brew "glib"
 # Dependency Manager for PHP
@@ -23,16 +25,10 @@ brew "consul-template"
 brew "coreutils"
 # Secure your credentials in environment variables
 brew "envchain"
-# Validating, recursive, caching DNS resolver
-brew "unbound"
-# Generate introspection data for GObject libraries
-brew "gobject-introspection"
 # OpenType text shaping engine
 brew "harfbuzz"
 # Subtitle renderer for the ASS/SSA subtitle format
 brew "libass"
-# Secure Reliable Transport
-brew "srt"
 # Play, record, convert, and stream audio and video
 brew "ffmpeg"
 # User-friendly command-line shell for UNIX-like operating systems
@@ -121,6 +117,8 @@ brew "aws/tap/aws-sam-cli"
 brew "buildpack/tap/pack"
 # Sentry command-line client for some generic tasks
 brew "getsentry/tools/sentry-cli"
+# Terraform
+brew "hashicorp/tap/terraform"
 # Everything you need to get started with Heroku
 brew "heroku/brew/heroku"
 # tbls is a CI-Friendly tool for document a database, written in Go.
