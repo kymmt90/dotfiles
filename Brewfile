@@ -99,6 +99,10 @@ brew "redis", restart_service: true
 brew "stern"
 # User interface to the TELNET protocol
 brew "telnet"
+# Tool to build, change, and version infrastructure
+brew "terraform@0.12"
+# Tool to build, change, and version infrastructure
+brew "terraform@0.13"
 # Multi-platform code-search similar to ack and ag
 brew "the_platinum_searcher"
 # Display directories as trees (with optional color/HTML output)
