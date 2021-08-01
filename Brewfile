@@ -155,6 +155,8 @@ cask "slack"
 cask "vagrant"
 # Open-source code editor
 cask "visual-studio-code"
+# Video communication and virtual meeting platform
+cask "webex"
 mas "1Password 7", id: 1333542190
 mas "Be Focused", id: 973134470
 mas "CopyLinkToPasteboard", id: 1551527433
