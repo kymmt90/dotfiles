@@ -105,6 +105,8 @@ brew "telnet"
 brew "terraform@0.12"
 # Tool to build, change, and version infrastructure
 brew "terraform@0.13"
+# Terraform version manager inspired by rbenv
+brew "tfenv"
 # Multi-platform code-search similar to ack and ag
 brew "the_platinum_searcher"
 # Display directories as trees (with optional color/HTML output)
@@ -124,7 +126,7 @@ brew "buildpack/tap/pack"
 # Sentry command-line client for some generic tasks
 brew "getsentry/tools/sentry-cli"
 # Terraform
-brew "hashicorp/tap/terraform"
+brew "hashicorp/tap/terraform", link: false
 # Everything you need to get started with Heroku
 brew "heroku/brew/heroku"
 # tbls is a CI-Friendly tool for document a database, written in Go.
