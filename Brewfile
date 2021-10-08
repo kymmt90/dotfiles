@@ -69,6 +69,8 @@ brew "mas"
 brew "memcached"
 # Simple tool to make locally trusted development certificates
 brew "mkcert"
+# Open source relational database management system
+brew "mysql@5.6"
 # Network Kanji code conversion Filter (NKF)
 brew "nkf"
 # Platform built on V8 to build network applications
