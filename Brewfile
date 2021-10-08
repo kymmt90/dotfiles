@@ -149,6 +149,8 @@ cask "karabiner-elements"
 cask "slack"
 # Development environment
 cask "vagrant"
+# Free and open-source hosted hypervisor for x86 virtualization
+cask "virtualbox"
 # Open-source code editor
 cask "visual-studio-code"
 # Video communication and virtual meeting platform
