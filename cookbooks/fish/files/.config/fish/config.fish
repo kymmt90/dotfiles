@@ -17,11 +17,7 @@ set -x PATH /usr/local/sbin $PATH
 set -x NODE_PATH $HOME/.nodebrew/current/lib/node_modules $NODE_PATH
 set -x PATH $HOME/go/bin $PATH
 
-eval (ssh-agent -c) >/dev/null
-
-function on_exit --on-event fish_exit
-  ssh-agent -k >/dev/null
-end
+ssh-add -A
 
 set -x GPG_TTY (tty)
 set -x GPG_AGENT_INFO $HOME/.gnupg/S.gpg-agent:0:1
