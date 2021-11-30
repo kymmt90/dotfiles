@@ -17,8 +17,6 @@ set -x PATH /usr/local/sbin $PATH
 set -x NODE_PATH $HOME/.nodebrew/current/lib/node_modules $NODE_PATH
 set -x PATH $HOME/go/bin $PATH
 
-ssh-add -A
-
 set -x GPG_TTY (tty)
 set -x GPG_AGENT_INFO $HOME/.gnupg/S.gpg-agent:0:1
 if [ ! (pgrep -x -u $USER "gpg-agent" | head -1) ]
