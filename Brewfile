@@ -23,8 +23,6 @@ brew "composer"
 brew "consul-template"
 # GNU File, Shell, and Text utilities
 brew "coreutils"
-# Load/unload environment variables based on $PWD
-brew "direnv"
 # Secure your credentials in environment variables
 brew "envchain"
 # OpenType text shaping engine
