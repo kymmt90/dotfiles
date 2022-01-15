@@ -13,10 +13,22 @@ tap "k1low/tap"
 tap "pyama86/kagiana"
 # Run your GitHub Actions locally 🚀
 brew "act"
+# Interpreted, interactive, object-oriented programming language
+brew "python@3.9"
 # Official Amazon AWS command-line interface
 brew "awscli"
 # Core application library for C
 brew "glib"
+# Tool Command Language
+brew "tcl-tk"
+# Open source suite of directory software
+brew "openldap"
+# Get a file from an HTTP, HTTPS or FTP server
+brew "curl"
+# Postgres C API library
+brew "libpq"
+# General-purpose scripting language
+brew "php", restart_service: true
 # Dependency Manager for PHP
 brew "composer"
 # Generic template rendering and notifications with Consul
@@ -25,10 +37,18 @@ brew "consul-template"
 brew "coreutils"
 # Secure your credentials in environment variables
 brew "envchain"
+# Validating, recursive, caching DNS resolver
+brew "unbound", restart_service: true
+# GNU Transport Layer Security (TLS) Library
+brew "gnutls"
+# Generate introspection data for GObject libraries
+brew "gobject-introspection"
 # OpenType text shaping engine
 brew "harfbuzz"
 # Subtitle renderer for the ASS/SSA subtitle format
 brew "libass"
+# Secure Reliable Transport
+brew "srt"
 # Play, record, convert, and stream audio and video
 brew "ffmpeg"
 # User-friendly command-line shell for UNIX-like operating systems
@@ -51,6 +71,8 @@ brew "go"
 brew "haskell-stack"
 # Database of common MIME types
 brew "shared-mime-info"
+# ISO/IEC 23008-12:2017 HEIF file format decoder and encoder
+brew "libheif"
 # Tools and libraries to manipulate images in many formats
 brew "imagemagick"
 # Lightweight and flexible command-line JSON processor
@@ -64,11 +86,13 @@ brew "libyaml"
 # Mac App Store command-line interface
 brew "mas"
 # High performance, distributed memory object caching system
-brew "memcached"
+brew "memcached", restart_service: true
 # Simple tool to make locally trusted development certificates
 brew "mkcert"
 # Open source relational database management system
-brew "mysql@5.6"
+brew "mysql@5.6", restart_service: true
+# HTTP/2 C Library
+brew "nghttp2"
 # Network Kanji code conversion Filter (NKF)
 brew "nkf"
 # Platform built on V8 to build network applications
@@ -77,14 +101,12 @@ brew "node"
 brew "nodebrew"
 # Simplistic interactive filtering tool
 brew "peco"
-# General-purpose scripting language
-brew "php"
 # Pinentry for GPG on Mac
 brew "pinentry-mac"
 # Python dependency management tool
 brew "pipenv"
 # Object-relational database system
-brew "postgresql"
+brew "postgresql", restart_service: true
 # Parallel versions of OpenSSH and related tools
 brew "pssh"
 # Interpreted, interactive, object-oriented programming language
@@ -147,7 +169,7 @@ cask "karabiner-elements"
 cask "slack"
 # Development environment
 cask "vagrant"
-# Free and open-source hosted hypervisor for x86 virtualization
+# Virtualizer for x86 hardware
 cask "virtualbox"
 # Open-source code editor
 cask "visual-studio-code"
