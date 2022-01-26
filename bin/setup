@@ -7,7 +7,7 @@ if [ $? -ne 0 ]; then
   /usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
 fi
 
-MITAMAE_VERSION="1.12.7"
+MITAMAE_VERSION="1.12.8"
 
 if [ -e bin/mitamae-x86_64-darwin ]; then
   MITAMAE_VERSION_STDOUT=$(bin/mitamae-x86_64-darwin version)
