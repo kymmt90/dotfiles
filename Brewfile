@@ -13,6 +13,8 @@ tap "k1low/tap"
 tap "pyama86/kagiana"
 # Run your GitHub Actions locally 🚀
 brew "act"
+# Image format providing lossless and lossy compression for web images
+brew "webp"
 # Interpreted, interactive, object-oriented programming language
 brew "python@3.9"
 # Official Amazon AWS command-line interface
@@ -21,20 +23,20 @@ brew "awscli"
 brew "glib"
 # Tool Command Language
 brew "tcl-tk"
-# Open source suite of directory software
-brew "openldap"
 # Get a file from an HTTP, HTTPS or FTP server
 brew "curl"
 # Postgres C API library
 brew "libpq"
 # General-purpose scripting language
-brew "php", restart_service: true
+brew "php", link: false
 # Dependency Manager for PHP
 brew "composer"
 # Generic template rendering and notifications with Consul
 brew "consul-template"
 # GNU File, Shell, and Text utilities
 brew "coreutils"
+# Functional metaprogramming aware language built on Erlang VM
+brew "elixir"
 # Secure your credentials in environment variables
 brew "envchain"
 # Validating, recursive, caching DNS resolver
