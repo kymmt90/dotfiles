@@ -25,6 +25,8 @@ brew "glib"
 brew "tcl-tk"
 # Get a file from an HTTP, HTTPS or FTP server
 brew "curl"
+# Libraries to talk to Microsoft SQL Server and Sybase databases
+brew "freetds"
 # Postgres C API library
 brew "libpq"
 # General-purpose scripting language
@@ -35,6 +37,8 @@ brew "composer"
 brew "consul-template"
 # GNU File, Shell, and Text utilities
 brew "coreutils"
+# Programming language for highly scalable real-time systems
+brew "erlang"
 # Functional metaprogramming aware language built on Erlang VM
 brew "elixir"
 # Secure your credentials in environment variables
@@ -91,6 +95,8 @@ brew "mas"
 brew "memcached"
 # Simple tool to make locally trusted development certificates
 brew "mkcert"
+# Open source relational database management system
+brew "mysql"
 # Open source relational database management system
 brew "mysql@5.6"
 # HTTP/2 C Library
