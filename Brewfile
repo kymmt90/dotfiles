@@ -28,7 +28,7 @@ brew "curl"
 # Postgres C API library
 brew "libpq"
 # General-purpose scripting language
-brew "php", link: false
+brew "php"
 # Dependency Manager for PHP
 brew "composer"
 # Generic template rendering and notifications with Consul
@@ -88,11 +88,11 @@ brew "libyaml"
 # Mac App Store command-line interface
 brew "mas"
 # High performance, distributed memory object caching system
-brew "memcached", restart_service: true
+brew "memcached"
 # Simple tool to make locally trusted development certificates
 brew "mkcert"
 # Open source relational database management system
-brew "mysql@5.6", restart_service: true
+brew "mysql@5.6"
 # HTTP/2 C Library
 brew "nghttp2"
 # Network Kanji code conversion Filter (NKF)
@@ -118,7 +118,7 @@ brew "ruby-build"
 # Ruby version manager
 brew "rbenv"
 # Persistent key-value database, with built-in net interface
-brew "redis", restart_service: true
+brew "redis"
 # Tail multiple Kubernetes pods & their containers
 brew "stern"
 # User interface to the TELNET protocol
