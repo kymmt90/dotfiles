@@ -44,7 +44,7 @@ brew "elixir"
 # Secure your credentials in environment variables
 brew "envchain"
 # Validating, recursive, caching DNS resolver
-brew "unbound", restart_service: true
+brew "unbound"
 # GNU Transport Layer Security (TLS) Library
 brew "gnutls"
 # Generate introspection data for GObject libraries
@@ -114,7 +114,7 @@ brew "pinentry-mac"
 # Python dependency management tool
 brew "pipenv"
 # Object-relational database system
-brew "postgresql", restart_service: true
+brew "postgresql"
 # Parallel versions of OpenSSH and related tools
 brew "pssh"
 # Interpreted, interactive, object-oriented programming language
