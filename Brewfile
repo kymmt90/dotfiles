@@ -11,8 +11,6 @@ tap "homebrew/core", "https://github.com/Homebrew/homebrew-core.git"
 tap "homebrew/services"
 tap "k1low/tap"
 tap "pyama86/kagiana"
-# Run your GitHub Actions locally 🚀
-brew "act"
 # Image format providing lossless and lossy compression for web images
 brew "webp"
 # Interpreted, interactive, object-oriented programming language
@@ -157,8 +155,6 @@ brew "k1low/tap/tbls"
 brew "pyama86/kagiana/kagiana"
 # Command-line helper for the 1Password password manager
 cask "1password-cli"
-# Web security testing toolkit
-cask "burp-suite"
 # Voice and text chat software
 cask "discord"
 # App to build and share containerized applications and microservices
@@ -167,8 +163,6 @@ cask "docker"
 cask "firefox"
 # Web browser
 cask "google-chrome"
-# Light, Electron-based Wrapper around GraphiQL
-cask "graphiql"
 # HTTP and GraphQL Client
 cask "insomnia"
 # Keyboard customizer
@@ -184,7 +178,6 @@ cask "visual-studio-code"
 # Video communication and virtual meeting platform
 cask "webex"
 mas "1Password 7", id: 1333542190
-mas "Be Focused", id: 973134470
 mas "CopyLinkToPasteboard", id: 1551527433
 mas "Craft", id: 1487937127
 mas "Day One", id: 1055511498
