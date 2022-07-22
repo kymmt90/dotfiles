@@ -179,7 +179,6 @@ cask "visual-studio-code"
 cask "webex"
 mas "1Password 7", id: 1333542190
 mas "CopyLinkToPasteboard", id: 1551527433
-mas "Craft", id: 1487937127
 mas "Day One", id: 1055511498
 mas "Flow", id: 1423210932
 mas "GarageBand", id: 682658836
