@@ -2,6 +2,12 @@ set -x EDITOR vi
 
 ulimit -n 1024
 
+set ARCH (uname -m)
+
+if [ $ARCH = "arm64" ]
+ eval (/opt/homebrew/bin/brew shellenv)
+end
+
 set __fish_git_prompt_showdirtystate 'yes'
 set __fish_git_prompt_showupstream 'yes'
 set __fish_git_prompt_showuntrackedfiles 'yes'
@@ -10,12 +16,18 @@ set __fish_git_prompt_showcolorhints 'yes'
 rbenv init - | source
 
 set -x PATH $HOME/.nodebrew/current/bin $PATH
-set -x PATH /usr/local/share/git-core/contrib/diff-highlight $PATH
-set -x PATH /usr/local/opt/mysql@5.6/bin $PATH
-set -x PATH /usr/local/opt/openssl@1.1/bin $PATH
 set -x PATH /usr/local/sbin $PATH
 set -x NODE_PATH $HOME/.nodebrew/current/lib/node_modules $NODE_PATH
 set -x PATH $HOME/go/bin $PATH
+
+if [ $ARCH = "arm64" ]
+  set HOMEBREW_PATH /opt/homebrew
+else if [ $ARCH = "x86_64" ]
+  set HOMEBREW_PATH /usr/local
+end
+set -x PATH {$HOMEBREW_PATH}/share/git-core/contrib/diff-highlight $PATH
+set -x PATH {$HOMEBREW_PATH}/opt/mysql@5.6/bin $PATH
+set -x PATH {$HOMEBREW_PATH}/opt/openssl@1.1/bin $PATH
 
 set -x GPG_TTY (tty)
 set -x GPG_AGENT_INFO $HOME/.gnupg/S.gpg-agent:0:1

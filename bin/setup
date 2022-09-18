@@ -2,15 +2,27 @@
 
 set -u
 
+ARCH=$(uname -m)
+
 type brew >/dev/null 2>&1
 if [ $? -ne 0 ]; then
   /usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
 fi
 
+if [[ $ARCH = arm64 ]]; then
+  eval "$(/opt/homebrew/bin/brew shellenv)"
+fi
+
 MITAMAE_VERSION="1.12.9"
 
-if [ -e bin/mitamae-x86_64-darwin ]; then
-  MITAMAE_VERSION_STDOUT=$(bin/mitamae-x86_64-darwin version)
+if [[ $ARCH = x86_64 ]]; then
+  MITAMAE_BIN=mitamae-x86_64-darwin
+elif [[ $ARCH = arm64 ]]; then
+  MITAMAE_BIN=mitamae-aarch64-darwin
+fi
+
+if [ -e bin/$MITAMAE_BIN ]; then
+  MITAMAE_VERSION_STDOUT=$(bin/$MITAMAE_BIN version)
   VERSION_REGEX="([0-9]+\.[0-9]+\.[0-9]+)"
 
   if [[ $MITAMAE_VERSION_STDOUT =~ $VERSION_REGEX ]]; then
@@ -18,10 +30,10 @@ if [ -e bin/mitamae-x86_64-darwin ]; then
   fi
 fi
 
-if [ ! -e bin/mitamae-x86_64-darwin ] || [ $MITAMAE_VERSION != $CURRENT_MITAMAE_VERSION ]; then
-  (cd bin; curl -sSL https://github.com/itamae-kitchen/mitamae/releases/download/v${MITAMAE_VERSION}/mitamae-x86_64-darwin.tar.gz | tar xvz)
+if [ ! -e bin/$MITAMAE_BIN ] || [ $MITAMAE_VERSION != $CURRENT_MITAMAE_VERSION ]; then
+  (cd bin; curl -sSL https://github.com/itamae-kitchen/mitamae/releases/download/v${MITAMAE_VERSION}/${MITAMAE_BIN}.tar.gz | tar xvz)
 fi
-bin/mitamae-x86_64-darwin local recipe.rb
+bin/$MITAMAE_BIN local recipe.rb
 
 brew update
 
