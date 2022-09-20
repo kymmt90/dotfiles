@@ -20,14 +20,9 @@ set -x PATH /usr/local/sbin $PATH
 set -x NODE_PATH $HOME/.nodebrew/current/lib/node_modules $NODE_PATH
 set -x PATH $HOME/go/bin $PATH
 
-if [ $ARCH = "arm64" ]
-  set HOMEBREW_PATH /opt/homebrew
-else if [ $ARCH = "x86_64" ]
-  set HOMEBREW_PATH /usr/local
-end
-set -x PATH {$HOMEBREW_PATH}/share/git-core/contrib/diff-highlight $PATH
-set -x PATH {$HOMEBREW_PATH}/opt/mysql@5.6/bin $PATH
-set -x PATH {$HOMEBREW_PATH}/opt/openssl@1.1/bin $PATH
+set -x PATH (brew --prefix)/share/git-core/contrib/diff-highlight $PATH
+set -x PATH (brew --prefix)/opt/mysql@5.6/bin $PATH
+set -x PATH (brew --prefix)/opt/openssl@1.1/bin $PATH
 
 set -x GPG_TTY (tty)
 set -x GPG_AGENT_INFO $HOME/.gnupg/S.gpg-agent:0:1
