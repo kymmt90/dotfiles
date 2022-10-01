@@ -165,8 +165,6 @@ cask "firefox"
 cask "google-chrome"
 # HTTP and GraphQL Client
 cask "insomnia"
-# Keyboard customizer
-cask "karabiner-elements"
 # Team communication and collaboration software
 cask "slack"
 # Development environment
