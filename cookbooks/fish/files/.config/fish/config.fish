@@ -15,6 +15,7 @@ set __fish_git_prompt_showcolorhints 'yes'
 
 rbenv init - | source
 
+set -x PATH $HOME/.cargo/bin $PATH
 set -x PATH $HOME/.nodebrew/current/bin $PATH
 set -x PATH /usr/local/sbin $PATH
 set -x NODE_PATH $HOME/.nodebrew/current/lib/node_modules $NODE_PATH
