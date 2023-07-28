@@ -1,6 +1,4 @@
 tap "aws/tap"
-tap "buildpack/tap"
-tap "getsentry/tools"
 tap "github/gh"
 tap "hashicorp/tap"
 tap "heroku/brew"
@@ -10,7 +8,6 @@ tap "homebrew/cask-versions"
 tap "homebrew/core", "https://github.com/Homebrew/homebrew-core.git"
 tap "homebrew/services"
 tap "k1low/tap"
-tap "pyama86/kagiana"
 # Image format providing lossless and lossy compression for web images
 brew "webp"
 # Interpreted, interactive, object-oriented programming language
@@ -143,20 +140,14 @@ brew "wget"
 brew "yarn"
 # AWS SAM CLI 🐿 is a tool for local development and testing of Serverless applications
 brew "aws/tap/aws-sam-cli"
-# A CLI for building apps using Cloud Native Buildpacks
-brew "buildpack/tap/pack"
 # Sentry command-line client for some generic tasks
 brew "getsentry/tools/sentry-cli"
 # Everything you need to get started with Heroku
 brew "heroku/brew/heroku"
 # tbls is a CI-Friendly tool for document a database, written in Go.
 brew "k1low/tap/tbls"
-# Kagiana for Vault
-brew "pyama86/kagiana/kagiana"
 # Command-line helper for the 1Password password manager
 cask "1password-cli"
-# Voice and text chat software
-cask "discord"
 # App to build and share containerized applications and microservices
 cask "docker"
 # Web browser
@@ -167,14 +158,8 @@ cask "google-chrome"
 cask "insomnia"
 # Team communication and collaboration software
 cask "slack"
-# Development environment
-cask "vagrant"
-# Virtualizer for x86 hardware
-cask "virtualbox"
 # Open-source code editor
 cask "visual-studio-code"
-# Video communication and virtual meeting platform
-cask "webex"
 mas "1Password 7", id: 1333542190
 mas "CopyLinkToPasteboard", id: 1551527433
 mas "Day One", id: 1055511498
