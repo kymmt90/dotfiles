@@ -5,7 +5,7 @@ tap "heroku/brew"
 tap "homebrew/bundle"
 tap "homebrew/cask"
 tap "homebrew/cask-versions"
-tap "homebrew/core", "https://github.com/Homebrew/homebrew-core.git"
+tap "homebrew/core"
 tap "homebrew/services"
 tap "k1low/tap"
 # Image format providing lossless and lossy compression for web images
