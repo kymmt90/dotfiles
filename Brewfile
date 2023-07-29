@@ -28,8 +28,6 @@ brew "libpq"
 brew "php"
 # Dependency Manager for PHP
 brew "composer"
-# Generic template rendering and notifications with Consul
-brew "consul-template"
 # GNU File, Shell, and Text utilities
 brew "coreutils"
 # Programming language for highly scalable real-time systems
@@ -126,8 +124,6 @@ brew "stern"
 brew "telnet"
 # Terraform version manager inspired by rbenv
 brew "tfenv"
-# Multi-platform code-search similar to ack and ag
-brew "the_platinum_searcher"
 # Display directories as trees (with optional color/HTML output)
 brew "tree"
 # Google's JavaScript engine
