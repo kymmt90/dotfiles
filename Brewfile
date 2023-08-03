@@ -6,8 +6,6 @@ tap "homebrew/cask-versions"
 tap "homebrew/core"
 tap "homebrew/services"
 tap "k1low/tap"
-# Interpreted, interactive, object-oriented programming language
-brew "python@3.9"
 # Official Amazon AWS command-line interface
 brew "awscli"
 # Core application library for C
@@ -64,8 +62,6 @@ brew "memcached"
 brew "mkcert"
 # Open source relational database management system
 brew "mysql"
-# Open source relational database management system
-brew "mysql@5.6"
 # HTTP/2 C Library
 brew "nghttp2"
 # Network Kanji code conversion Filter (NKF)
@@ -81,11 +77,13 @@ brew "pinentry-mac"
 # Python dependency management tool
 brew "pipenv"
 # Object-relational database system
-brew "postgresql"
+brew "postgresql@14"
 # Parallel versions of OpenSSH and related tools
 brew "pssh"
 # Interpreted, interactive, object-oriented programming language
 brew "python@3.8"
+# Interpreted, interactive, object-oriented programming language
+brew "python@3.9"
 # Install various Ruby versions and implementations
 brew "ruby-build"
 # Ruby version manager
@@ -102,8 +100,6 @@ brew "tfenv"
 brew "tree"
 # Google's JavaScript engine
 brew "v8"
-# Google's open source JavaScript engine
-brew "v8@3.15"
 # Internet file retriever
 brew "wget"
 # JavaScript package manager
