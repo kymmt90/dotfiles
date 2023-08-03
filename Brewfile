@@ -90,6 +90,8 @@ brew "ruby-build"
 brew "rbenv"
 # Persistent key-value database, with built-in net interface
 brew "redis"
+# Rust toolchain installer
+brew "rustup-init"
 # Tail multiple Kubernetes pods & their containers
 brew "stern"
 # User interface to the TELNET protocol
