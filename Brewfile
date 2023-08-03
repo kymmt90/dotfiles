@@ -1,6 +1,4 @@
-tap "aws/tap"
 tap "github/gh"
-tap "hashicorp/tap"
 tap "heroku/brew"
 tap "homebrew/bundle"
 tap "homebrew/cask"
@@ -134,10 +132,6 @@ brew "v8@3.15"
 brew "wget"
 # JavaScript package manager
 brew "yarn"
-# AWS SAM CLI 🐿 is a tool for local development and testing of Serverless applications
-brew "aws/tap/aws-sam-cli"
-# Sentry command-line client for some generic tasks
-brew "getsentry/tools/sentry-cli"
 # Everything you need to get started with Heroku
 brew "heroku/brew/heroku"
 # tbls is a CI-Friendly tool for document a database, written in Go.
