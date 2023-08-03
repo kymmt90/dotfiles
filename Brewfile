@@ -156,16 +156,3 @@ cask "insomnia"
 cask "slack"
 # Open-source code editor
 cask "visual-studio-code"
-mas "1Password 7", id: 1333542190
-mas "CopyLinkToPasteboard", id: 1551527433
-mas "Day One", id: 1055511498
-mas "Flow", id: 1423210932
-mas "GarageBand", id: 682658836
-mas "iMovie", id: 408981434
-mas "Instapaper Save", id: 1481302432
-mas "Keynote", id: 409183694
-mas "Kindle", id: 405399194
-mas "LINE", id: 539883307
-mas "Numbers", id: 409203825
-mas "Pages", id: 409201541
-mas "Skitch", id: 425955336
