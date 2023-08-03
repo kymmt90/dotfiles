@@ -6,22 +6,14 @@ tap "homebrew/cask-versions"
 tap "homebrew/core"
 tap "homebrew/services"
 tap "k1low/tap"
-# Image format providing lossless and lossy compression for web images
-brew "webp"
 # Interpreted, interactive, object-oriented programming language
 brew "python@3.9"
 # Official Amazon AWS command-line interface
 brew "awscli"
 # Core application library for C
 brew "glib"
-# Tool Command Language
-brew "tcl-tk"
 # Get a file from an HTTP, HTTPS or FTP server
 brew "curl"
-# Libraries to talk to Microsoft SQL Server and Sybase databases
-brew "freetds"
-# Postgres C API library
-brew "libpq"
 # General-purpose scripting language
 brew "php"
 # Dependency Manager for PHP
@@ -34,18 +26,6 @@ brew "erlang"
 brew "elixir"
 # Secure your credentials in environment variables
 brew "envchain"
-# Validating, recursive, caching DNS resolver
-brew "unbound"
-# GNU Transport Layer Security (TLS) Library
-brew "gnutls"
-# Generate introspection data for GObject libraries
-brew "gobject-introspection"
-# OpenType text shaping engine
-brew "harfbuzz"
-# Subtitle renderer for the ASS/SSA subtitle format
-brew "libass"
-# Secure Reliable Transport
-brew "srt"
 # Play, record, convert, and stream audio and video
 brew "ffmpeg"
 # User-friendly command-line shell for UNIX-like operating systems
@@ -68,8 +48,6 @@ brew "go"
 brew "haskell-stack"
 # Database of common MIME types
 brew "shared-mime-info"
-# ISO/IEC 23008-12:2017 HEIF file format decoder and encoder
-brew "libheif"
 # Tools and libraries to manipulate images in many formats
 brew "imagemagick"
 # Lightweight and flexible command-line JSON processor
@@ -78,8 +56,6 @@ brew "jq"
 brew "kubectx"
 # GNOME XML library
 brew "libxml2"
-# YAML Parser
-brew "libyaml"
 # Mac App Store command-line interface
 brew "mas"
 # High performance, distributed memory object caching system
