@@ -32,5 +32,10 @@ if [ ! (pgrep -x -u $USER "gpg-agent" | head -1) ]
   gpg-connect-agent /bye
 end
 
+alias cat="bat"
+alias find="fd"
+alias grep="rg"
+alias ls="exa"
+
 # The next line updates PATH for the Google Cloud SDK.
 if [ -f '/Users/kymmt90/google-cloud-sdk/path.fish.inc' ]; . '/Users/kymmt90/google-cloud-sdk/path.fish.inc'; end
