@@ -25,6 +25,8 @@ set -x PATH (brew --prefix)/share/git-core/contrib/diff-highlight $PATH
 set -x PATH (brew --prefix)/opt/mysql@5.6/bin $PATH
 set -x PATH (brew --prefix)/opt/openssl@1.1/bin $PATH
 
+set -x LIBRARY_PATH (brew --prefix)/lib $LIBRARY_PATH
+
 set -x GPG_TTY (tty)
 set -x GPG_AGENT_INFO $HOME/.gnupg/S.gpg-agent:0:1
 if [ ! (pgrep -x -u $USER "gpg-agent" | head -1) ]
