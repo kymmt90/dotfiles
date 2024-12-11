@@ -4,7 +4,6 @@
 	signingkey = B71C8C99666CD704
 [core]
 	editor = code --wait
-	excludesfile = ~/.gitignore
 [color]
 	ui = true
 [alias]
