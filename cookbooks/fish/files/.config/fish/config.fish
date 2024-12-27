@@ -25,6 +25,7 @@ set -x PATH (brew --prefix)/share/git-core/contrib/diff-highlight $PATH
 set -x PATH (brew --prefix)/opt/mysql@5.6/bin $PATH
 set -x PATH (brew --prefix)/opt/openjdk/bin $PATH
 set -x PATH (brew --prefix)/opt/openssl@1.1/bin $PATH
+set -x PATH (brew --prefix)/opt/diffutils/bin $PATH
 
 set -x LIBRARY_PATH (brew --prefix)/lib $LIBRARY_PATH
 
