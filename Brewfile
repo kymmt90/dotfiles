@@ -47,7 +47,7 @@ brew "peco"
 brew "php"
 brew "pinentry-mac"
 brew "pipenv"
-brew "postgresql@14"
+brew "postgresql@17", restart_service: true
 brew "pssh"
 brew "python@3.8"
 brew "python@3.9"
