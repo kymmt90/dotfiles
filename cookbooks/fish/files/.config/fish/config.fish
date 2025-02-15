@@ -40,10 +40,6 @@ end
 set -gx VOLTA_HOME "$HOME/.volta"
 set -gx PATH "$VOLTA_HOME/bin" $PATH
 
-alias cat="bat"
-alias find="fd"
-alias grep="rg"
-
 source "$(brew --prefix)/share/google-cloud-sdk/path.fish.inc"
 
 direnv hook fish | source
