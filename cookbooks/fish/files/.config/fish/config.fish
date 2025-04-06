@@ -16,9 +16,7 @@ set __fish_git_prompt_showcolorhints 'yes'
 rbenv init - | source
 
 set -x PATH $HOME/.cargo/bin $PATH
-set -x PATH $HOME/.nodebrew/current/bin $PATH
 set -x PATH /usr/local/sbin $PATH
-set -x NODE_PATH $HOME/.nodebrew/current/lib/node_modules $NODE_PATH
 set -x PATH $HOME/go/bin $PATH
 
 set -x PATH (brew --prefix)/share/git-core/contrib/diff-highlight $PATH
@@ -36,9 +34,6 @@ if [ ! (pgrep -x -u $USER "gpg-agent" | head -1) ]
   set -el DISPLAY
   gpg-connect-agent /bye
 end
-
-set -gx VOLTA_HOME "$HOME/.volta"
-set -gx PATH "$VOLTA_HOME/bin" $PATH
 
 source "$(brew --prefix)/share/google-cloud-sdk/path.fish.inc"
 
