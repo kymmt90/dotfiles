@@ -13,8 +13,6 @@ set __fish_git_prompt_showupstream 'yes'
 set __fish_git_prompt_showuntrackedfiles 'yes'
 set __fish_git_prompt_showcolorhints 'yes'
 
-rbenv init - | source
-
 set -x PATH $HOME/.cargo/bin $PATH
 set -x PATH /usr/local/sbin $PATH
 set -x PATH $HOME/go/bin $PATH
