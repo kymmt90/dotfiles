@@ -2,11 +2,7 @@ set -x EDITOR vi
 
 ulimit -n 1024
 
-set ARCH (uname -m)
-
-if [ $ARCH = "arm64" ]
- eval (/opt/homebrew/bin/brew shellenv)
-end
+eval (/opt/homebrew/bin/brew shellenv)
 
 set __fish_git_prompt_showdirtystate 'yes'
 set __fish_git_prompt_showupstream 'yes'
