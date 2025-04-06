@@ -11,7 +11,7 @@ fi
 
 eval "$(/opt/homebrew/bin/brew shellenv)"
 
-MITAMAE_VERSION="1.12.9"
+MITAMAE_VERSION="1.14.2"
 MITAMAE_BIN=mitamae-aarch64-darwin
 
 if [ -e bin/$MITAMAE_BIN ]; then
