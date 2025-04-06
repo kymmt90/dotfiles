@@ -9,17 +9,10 @@ if [ $? -ne 0 ]; then
   /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install.sh)"
 fi
 
-if [[ $ARCH = arm64 ]]; then
-  eval "$(/opt/homebrew/bin/brew shellenv)"
-fi
+eval "$(/opt/homebrew/bin/brew shellenv)"
 
 MITAMAE_VERSION="1.12.9"
-
-if [[ $ARCH = x86_64 ]]; then
-  MITAMAE_BIN=mitamae-x86_64-darwin
-elif [[ $ARCH = arm64 ]]; then
-  MITAMAE_BIN=mitamae-aarch64-darwin
-fi
+MITAMAE_BIN=mitamae-aarch64-darwin
 
 if [ -e bin/$MITAMAE_BIN ]; then
   MITAMAE_VERSION_STDOUT=$(bin/$MITAMAE_BIN version)
