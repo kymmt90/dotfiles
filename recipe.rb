@@ -9,9 +9,9 @@ define :link_dotfile, cookbook: nil do
   end
 end
 
-include_recipe 'cookbooks/git/default.rb'
-include_recipe 'cookbooks/fish/default.rb'
-include_recipe 'cookbooks/psql/default.rb'
-include_recipe 'cookbooks/mise/default.rb'
 include_recipe 'cookbooks/docker'
+include_recipe 'cookbooks/fish'
 include_recipe 'cookbooks/ghq'
+include_recipe 'cookbooks/git'
+include_recipe 'cookbooks/mise'
+include_recipe 'cookbooks/psql'
