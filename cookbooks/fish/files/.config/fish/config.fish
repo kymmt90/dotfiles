@@ -29,6 +29,8 @@ if [ ! (pgrep -x -u $USER "gpg-agent" | head -1) ]
   gpg-connect-agent /bye
 end
 
-source "$(brew --prefix)/share/google-cloud-sdk/path.fish.inc"
+if [ -f "$(brew --prefix)/share/google-cloud-sdk/path.fish.inc" ]
+  source "$(brew --prefix)/share/google-cloud-sdk/path.fish.inc"
+end
 
 direnv hook fish | source

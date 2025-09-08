@@ -43,3 +43,5 @@ brew "wget"
 brew "yarn"
 brew "heroku/brew/heroku"
 brew "k1low/tap/tbls"
+
+cask "gcloud-cli"
