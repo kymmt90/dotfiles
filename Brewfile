@@ -1,7 +1,5 @@
 tap "github/gh"
 tap "heroku/brew"
-tap "homebrew/bundle"
-tap "homebrew/services"
 tap "k1low/tap"
 tap "songmu/tap"
 brew "actionlint"
