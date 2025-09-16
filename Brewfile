@@ -31,7 +31,7 @@ brew "mise"
 brew "nkf"
 brew "peco"
 brew "pinentry-mac"
-brew "postgresql@17", restart_service: true
+brew "postgresql@17"
 brew "redis"
 brew "ripgrep"
 brew "rustup"
