@@ -2,7 +2,7 @@
 
 set -uo pipefail
 
-MITAMAE_VERSION="1.14.2"
+MITAMAE_VERSION="1.14.4"
 MITAMAE_BIN=mitamae-aarch64-darwin
 
 if [ -e bin/$MITAMAE_BIN ]; then
