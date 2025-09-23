@@ -29,6 +29,11 @@ if [ ! (pgrep -x -u $USER "gpg-agent" | head -1) ]
   gpg-connect-agent /bye
 end
 
+set -x PNPM_HOME $HOME/Library/pnpm
+if not string match -q -- $PNPM_HOME $PATH
+  set -x PATH "$PNPM_HOME" $PATH
+end
+
 if [ -f "$(brew --prefix)/share/google-cloud-sdk/path.fish.inc" ]
   source "$(brew --prefix)/share/google-cloud-sdk/path.fish.inc"
 end

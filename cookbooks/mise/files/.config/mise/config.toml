@@ -1,5 +1,6 @@
 [tools]
 node = "22"
+pnpm = "10"
 ruby = "3.4"
 
 [settings]
