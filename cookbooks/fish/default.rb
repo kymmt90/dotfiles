@@ -1,15 +1,3 @@
-directory File.join(ENV['HOME'], '.config/fish') do
-  mode '700'
-end
-
-link_dotfile '.config/fish/config.fish' do
-  cookbook 'fish'
-end
-
-link_dotfile '.config/fish/completions' do
-  cookbook 'fish'
-end
-
-link_dotfile '.config/fish/functions' do
-  cookbook 'fish'
-end
+config '/fish/config.fish'
+config '/fish/completions'
+config '/fish/functions'

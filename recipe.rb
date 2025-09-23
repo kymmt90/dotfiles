@@ -1,10 +1,19 @@
 BREW_PREFIX = `brew --prefix`.strip
+XDG_CONFIG_HOME = File.join(ENV['HOME'], '.config')
 
-define :link_dotfile, cookbook: nil do
-  target = File.join(ENV['HOME'], params[:name])
+define :config, xdg: true do
+  directories = File.dirname(params[:name])
+  directories = File.join(XDG_CONFIG_HOME, directories) if params[:xdg]
+  directory directories do
+    user node[:user]
+  end
 
-  link target do
-    to File.expand_path("./cookbooks/#{params[:cookbook]}/files/#{params[:name]}")
+  config_src = params[:name]
+  config_src = File.join(File.basename(XDG_CONFIG_HOME), config_src) if params[:xdg]
+  config_src = File.join('cookbooks', File.basename(directories), 'files', config_src)
+  link File.join(XDG_CONFIG_HOME, params[:name]) do
+    to File.expand_path(config_src)
+    user node[:user]
     force true
   end
 end
@@ -14,5 +23,5 @@ include_recipe 'cookbooks/fish'
 include_recipe 'cookbooks/ghq'
 include_recipe 'cookbooks/git'
 include_recipe 'cookbooks/mise'
-include_recipe 'cookbooks/psql'
+include_recipe 'cookbooks/pg'
 include_recipe 'cookbooks/rg'
