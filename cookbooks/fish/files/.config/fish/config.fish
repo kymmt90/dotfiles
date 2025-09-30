@@ -34,6 +34,8 @@ if not string match -q -- $PNPM_HOME $PATH
   set -x PATH "$PNPM_HOME" $PATH
 end
 
+set -x RIPGREP_CONFIG_PATH $HOME/.config/rg/config
+
 if [ -f "$(brew --prefix)/share/google-cloud-sdk/path.fish.inc" ]
   source "$(brew --prefix)/share/google-cloud-sdk/path.fish.inc"
 end
