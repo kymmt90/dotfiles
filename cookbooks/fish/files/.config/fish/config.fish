@@ -22,6 +22,8 @@ set -x PATH (brew --prefix)/opt/postgresql@17/bin $PATH
 
 set -x LIBRARY_PATH (brew --prefix)/lib $LIBRARY_PATH
 
+set -x BYOBU_CONFIG_DIR $HOME/.config/byobu
+
 set -x GPG_TTY (tty)
 set -x GPG_AGENT_INFO $HOME/.gnupg/S.gpg-agent:0:1
 if [ ! (pgrep -x -u $USER "gpg-agent" | head -1) ]

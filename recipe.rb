@@ -18,6 +18,7 @@ define :config, xdg: true do
   end
 end
 
+include_recipe 'cookbooks/byobu'
 include_recipe 'cookbooks/docker'
 include_recipe 'cookbooks/fish'
 include_recipe 'cookbooks/ghq'
