@@ -1,3 +1,8 @@
+package 'colima'
+package "docker"
+package "docker-compose"
+package "docker-credential-helper"
+
 directory File.join(ENV['HOME'], '.docker') do
   mode '755'
 end
@@ -5,7 +10,7 @@ end
 execute "configure cliPluginsExtraDirs" do
   config_path = File.join(ENV['HOME'], '.docker', 'config.json')
   config = <<~CONFIG
-    {"cliPluginsExtraDirs":["#{BREW_PREFIX}/lib/docker/cli-plugins"]}
+    {"cliPluginsExtraDirs":["#{`brew --prefix`.strip}/lib/docker/cli-plugins"]}
   CONFIG
   tmp_path = "/tmp/docker-config.json"
 

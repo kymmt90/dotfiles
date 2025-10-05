@@ -1,4 +1,3 @@
-BREW_PREFIX = `brew --prefix`.strip
 XDG_CONFIG_HOME = File.join(ENV['HOME'], '.config')
 
 define :config, xdg: true do
@@ -17,6 +16,8 @@ define :config, xdg: true do
     force true
   end
 end
+
+include_recipe 'cookbooks/brew'
 
 include_recipe 'cookbooks/byobu'
 include_recipe 'cookbooks/docker'
