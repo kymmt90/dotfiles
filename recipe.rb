@@ -21,10 +21,14 @@ include_recipe 'cookbooks/brew'
 
 include_recipe 'cookbooks/fish'
 
-include_recipe 'cookbooks/byobu'
-include_recipe 'cookbooks/docker'
-include_recipe 'cookbooks/ghq'
-include_recipe 'cookbooks/git'
-include_recipe 'cookbooks/mise'
-include_recipe 'cookbooks/pg'
-include_recipe 'cookbooks/rg'
+%w(
+  byobu
+  docker
+  ghq
+  git
+  mise
+  pg
+  rg
+).each do |tool|
+  include_recipe "cookbooks/#{tool}"
+end
