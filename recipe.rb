@@ -22,6 +22,7 @@ include_recipe 'cookbooks/brew'
 include_recipe 'cookbooks/fish'
 
 %w(
+  bat
   byobu
   docker
   ghq
