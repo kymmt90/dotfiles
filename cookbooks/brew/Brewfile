@@ -1,5 +1,6 @@
 tap "github/gh"
 tap "heroku/brew"
+
 brew "actionlint"
 brew "awscli"
 brew "coreutils"
@@ -31,4 +32,5 @@ brew "wget"
 brew "yarn"
 brew "heroku/brew/heroku"
 
+cask "1password-cli"
 cask "gcloud-cli"
