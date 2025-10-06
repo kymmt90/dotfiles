@@ -19,3 +19,11 @@ execute "configure cliPluginsExtraDirs" do
   COMMAND
   not_if "grep -q cliPluginsExtraDirs #{config_path}"
 end
+
+execute "brew services start colima" do
+  # only if colima has not already started
+  only_if <<~COND
+    brew services --json | \
+    jq -e 'map(select(.name == "colima" and .status != "started")) | any' >/dev/null
+  COND
+end
