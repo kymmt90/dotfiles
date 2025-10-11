@@ -25,6 +25,7 @@ include_recipe 'cookbooks/fish'
   bat
   byobu
   docker
+  fd
   ghq
   git
   mise
