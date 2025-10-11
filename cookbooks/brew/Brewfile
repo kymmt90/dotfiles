@@ -28,8 +28,14 @@ brew "wget"
 brew "yarn"
 brew "heroku/brew/heroku"
 
+cask_args adopt: true
 cask "1password-cli"
+cask "1password"
+cask "firefox"
 cask "gcloud-cli"
+cask "google-chrome"
+cask "slack"
+cask "visual-studio-code"
 
 mas "1Password for Safari", id: 1569813296
 mas "CotEditor", id: 1024640650
