@@ -1,6 +1,11 @@
+node.reverse_merge!({
+  os_version: `sw_vers -productVersion`.chomp
+})
+
 node.validate! do
   {
-    install_scope: array_of(symbol)
+    install_scope: array_of(symbol),
+    os_version: string
   }
 end
 
