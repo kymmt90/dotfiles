@@ -1,3 +1,14 @@
+node.validate! do
+  {
+    install_scope: array_of(symbol)
+  }
+end
+
+# @rbs (:essential | :additional) -> bool
+def node.has_install_scope?(scope)
+  self[:install_scope].include?(scope)
+end
+
 XDG_CONFIG_HOME = File.join(ENV['HOME'], '.config')
 
 define :config_directory, xdg: true do
