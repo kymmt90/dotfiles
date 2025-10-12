@@ -24,6 +24,7 @@ include_recipe 'cookbooks/fish'
 %w(
   bat
   byobu
+  container
   docker
   fd
   ghq
