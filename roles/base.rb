@@ -8,6 +8,7 @@ include_recipe '../cookbooks/fish'
   byobu
   docker
   fd
+  ghostty
   git
   mise
   pg
