@@ -7,8 +7,8 @@ bind-key q send-prefix
 
 # Split pane vertically with -
 unbind-key -
-bind-key - split-window -v
+bind-key - split-window -v -c "#{pane_current_path}"
 
 # Split pane horizontally with |
 unbind-key |
-bind-key | split-window -h
+bind-key | split-window -h -c "#{pane_current_path}"
