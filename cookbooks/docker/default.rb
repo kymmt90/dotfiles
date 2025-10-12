@@ -3,21 +3,22 @@ package 'docker'
 package 'docker-compose'
 package 'docker-credential-helper'
 
-directory File.join(ENV['HOME'], '.docker') do
-  mode '755'
-end
+docker_config_directory_path = File.join(ENV['HOME'], '.docker')
+docker_config_path = File.join(docker_config_directory_path, 'config.json')
 
-config_path = File.join(ENV['HOME'], '.docker', 'config.json')
+config_directory docker_config_directory_path do
+  xdg false
+end
 
 execute 'credsStore configuration' do
   tmp_path = '/tmp/docker-config.json'
 
   command <<~CMD
-    cat #{config_path} | \
-    jq '.credsStore = "osxkeychain"' > #{tmp_path} && mv #{tmp_path} #{config_path}
+    cat #{docker_config_path} | \
+    jq '.credsStore = "osxkeychain"' > #{tmp_path} && mv #{tmp_path} #{docker_config_path}
   CMD
 
-  not_if %(cat #{config_path} | jq -e '.credsStore == "osxkeychain"')
+  not_if %(cat #{docker_config_path} | jq -e '.credsStore == "osxkeychain"')
 end
 
 execute 'cliPluginsExtraDirs configuration' do
@@ -27,10 +28,10 @@ execute 'cliPluginsExtraDirs configuration' do
   tmp_path = '/tmp/docker-config.json'
 
   command <<~CMD
-    cat #{config_path} | jq '. + #{config}' > #{tmp_path} && mv #{tmp_path} #{config_path}
+    cat #{docker_config_path} | jq '. + #{config}' > #{tmp_path} && mv #{tmp_path} #{docker_config_path}
   CMD
 
-  not_if "grep -q cliPluginsExtraDirs #{config_path}"
+  not_if "grep -q cliPluginsExtraDirs #{docker_config_path}"
 end
 
 execute 'brew services start colima' do

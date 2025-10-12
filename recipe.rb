@@ -1,10 +1,18 @@
 XDG_CONFIG_HOME = File.join(ENV['HOME'], '.config')
 
-define :config, xdg: true do
-  directories = File.dirname(params[:name])
+define :config_directory, xdg: true do
+  directories = params[:name]
   directories = File.join(XDG_CONFIG_HOME, directories) if params[:xdg]
   directory directories do
     user node[:user]
+  end
+end
+
+define :config, xdg: true do
+  directories = File.dirname(params[:name])
+  xdg = params[:xdg]
+  config_directory directories do
+    xdg xdg
   end
 
   config_src = params[:name]
