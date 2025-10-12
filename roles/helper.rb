@@ -24,20 +24,3 @@ define :config, xdg: true do
     force true
   end
 end
-
-include_recipe 'cookbooks/brew'
-
-include_recipe 'cookbooks/fish'
-
-%w(
-  bat
-  byobu
-  docker
-  fd
-  git
-  mise
-  pg
-  rg
-).each do |tool|
-  include_recipe "cookbooks/#{tool}"
-end

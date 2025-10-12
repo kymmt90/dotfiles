@@ -17,4 +17,4 @@ fi
 if [ ! -e bin/$MITAMAE_BIN ] || [ $MITAMAE_VERSION != $CURRENT_MITAMAE_VERSION ]; then
   (cd bin; curl -sSL https://github.com/itamae-kitchen/mitamae/releases/download/v${MITAMAE_VERSION}/${MITAMAE_BIN}.tar.gz | tar xvz)
 fi
-bin/$MITAMAE_BIN local recipe.rb
+bin/$MITAMAE_BIN local roles/work.rb
