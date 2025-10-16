@@ -2,7 +2,6 @@
 
 set -uo pipefail
 
-HOMEBREW_NO_ENV_HINTS=1
-brew upgrade
+HOMEBREW_NO_ENV_HINTS=1 brew upgrade
 
 mas upgrade
