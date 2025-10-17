@@ -1,3 +1,4 @@
+set -x LANG C
 set -x EDITOR vi
 
 ulimit -n 1024
