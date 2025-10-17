@@ -32,6 +32,8 @@ if [ ! (pgrep -x -u $USER "gpg-agent" | head -1) ]
   gpg-connect-agent /bye
 end
 
+set -x LESS -R
+
 set -x PNPM_HOME $HOME/Library/pnpm
 if not string match -q -- $PNPM_HOME $PATH
   set -x PATH "$PNPM_HOME" $PATH
