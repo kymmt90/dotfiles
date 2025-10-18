@@ -32,6 +32,8 @@ if [ ! (pgrep -x -u $USER "gpg-agent" | head -1) ]
   gpg-connect-agent /bye
 end
 
+set -x HOMEBREW_NO_ENV_HINTS 1
+
 set -x LESS -R
 
 set -x PNPM_HOME $HOME/Library/pnpm
