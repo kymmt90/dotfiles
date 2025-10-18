@@ -34,7 +34,7 @@ end
 
 set -x HOMEBREW_NO_ENV_HINTS 1
 
-set -x LESS -R
+set -x LESS -FR
 
 set -x PNPM_HOME $HOME/Library/pnpm
 if not string match -q -- $PNPM_HOME $PATH
