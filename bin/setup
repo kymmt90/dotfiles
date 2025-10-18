@@ -2,6 +2,8 @@
 
 set -uo pipefail
 
+xcode-select --install 2>/dev/null
+
 MITAMAE_VERSION="1.14.4"
 MITAMAE_BIN=mitamae-aarch64-darwin
 
