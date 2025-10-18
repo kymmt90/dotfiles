@@ -1,8 +1,15 @@
 # kymmt90/dotfiles
 
-## Set up
+## Setup
 
 ```
-$ xcode-select --install # if not installed
 $ bin/setup
+$ bin/setup -r work
+$ bin/setup -r personal
+```
+
+## Update
+
+```
+$ bin/update
 ```
