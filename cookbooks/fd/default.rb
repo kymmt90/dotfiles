@@ -1,3 +1,3 @@
-package 'fd'
+package "fd"
 
-config '/fd/ignore'
+config "/fd/ignore"

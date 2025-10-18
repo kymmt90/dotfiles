@@ -1,4 +1,4 @@
-package 'byobu'
+package "byobu"
 
-config '/byobu/keybindings.tmux'
-config '/byobu/statusrc'
+config "/byobu/keybindings.tmux"
+config "/byobu/statusrc"

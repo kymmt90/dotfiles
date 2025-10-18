@@ -1,9 +1,9 @@
-include_recipe 'helper'
+include_recipe "helper"
 
-include_recipe '../cookbooks/brew'
-include_recipe '../cookbooks/fish'
+include_recipe "../cookbooks/brew"
+include_recipe "../cookbooks/fish"
 
-%w(
+%w[
   bat
   byobu
   docker
@@ -13,6 +13,6 @@ include_recipe '../cookbooks/fish'
   mise
   pg
   rg
-).each do |tool|
+].each do |tool|
   include_recipe "../cookbooks/#{tool}"
 end

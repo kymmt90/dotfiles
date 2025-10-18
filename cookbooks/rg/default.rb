@@ -1,3 +1,3 @@
-package 'ripgrep'
+package "ripgrep"
 
-config '/rg/config'
+config "/rg/config"

@@ -1,7 +1,7 @@
-package 'git'
-package 'ghq'
+package "git"
+package "ghq"
 
-config '/git/config'
-config '/git/ignore'
+config "/git/config"
+config "/git/ignore"
 
-directory '~/Repositories'
+directory "~/Repositories"

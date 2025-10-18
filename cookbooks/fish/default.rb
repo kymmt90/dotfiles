@@ -1,5 +1,5 @@
-package 'fish'
+package "fish"
 
-config '/fish/config.fish'
-config '/fish/completions'
-config '/fish/functions'
+config "/fish/config.fish"
+config "/fish/completions"
+config "/fish/functions"

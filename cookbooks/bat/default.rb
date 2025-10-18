@@ -1,3 +1,3 @@
-package 'bat'
+package "bat"
 
-config '/bat/config'
+config "/bat/config"

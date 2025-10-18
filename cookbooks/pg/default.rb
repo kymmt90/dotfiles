@@ -1,3 +1,3 @@
-package 'postgresql@17'
+package "postgresql@17"
 
-config '/pg/psqlrc'
+config "/pg/psqlrc"
