@@ -46,3 +46,5 @@ set -x RIPGREP_CONFIG_PATH $HOME/.config/rg/config
 if [ -f "$HOMEBREW_PREFIX/share/google-cloud-sdk/path.fish.inc" ]
   source "$HOMEBREW_PREFIX/share/google-cloud-sdk/path.fish.inc"
 end
+
+abbr -a L --position anywhere --set-cursor "% | less"
