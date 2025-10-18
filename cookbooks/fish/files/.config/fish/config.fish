@@ -10,18 +10,16 @@ set __fish_git_prompt_showupstream 'yes'
 set __fish_git_prompt_showuntrackedfiles 'yes'
 set __fish_git_prompt_showcolorhints 'yes'
 
-set -x PATH $HOME/.cargo/bin $PATH
-set -x PATH /usr/local/sbin $PATH
-set -x PATH $HOME/go/bin $PATH
+fish_add_path $HOME/.cargo/bin
+fish_add_path $HOME/go/bin
+fish_add_path $HOMEBREW_PREFIX/share/git-core/contrib/diff-highlight
+fish_add_path $HOMEBREW_PREFIX/opt/mysql@5.6/bin
+fish_add_path $HOMEBREW_PREFIX/opt/openjdk/bin
+fish_add_path $HOMEBREW_PREFIX/opt/openssl@1.1/bin
+fish_add_path $HOMEBREW_PREFIX/opt/diffutils/bin
+fish_add_path $HOMEBREW_PREFIX/opt/postgresql@17/bin
 
-set -x PATH (brew --prefix)/share/git-core/contrib/diff-highlight $PATH
-set -x PATH (brew --prefix)/opt/mysql@5.6/bin $PATH
-set -x PATH (brew --prefix)/opt/openjdk/bin $PATH
-set -x PATH (brew --prefix)/opt/openssl@1.1/bin $PATH
-set -x PATH (brew --prefix)/opt/diffutils/bin $PATH
-set -x PATH (brew --prefix)/opt/postgresql@17/bin $PATH
-
-set -x LIBRARY_PATH (brew --prefix)/lib $LIBRARY_PATH
+set -x LIBRARY_PATH $HOMEBREW_PREFIX/lib $LIBRARY_PATH
 
 set -x BYOBU_CONFIG_DIR $HOME/.config/byobu
 
@@ -45,6 +43,6 @@ set -x PSQLRC $HOME/.config/pg/psqlrc
 
 set -x RIPGREP_CONFIG_PATH $HOME/.config/rg/config
 
-if [ -f "$(brew --prefix)/share/google-cloud-sdk/path.fish.inc" ]
-  source "$(brew --prefix)/share/google-cloud-sdk/path.fish.inc"
+if [ -f "$HOMEBREW_PREFIX/share/google-cloud-sdk/path.fish.inc" ]
+  source "$HOMEBREW_PREFIX/share/google-cloud-sdk/path.fish.inc"
 end
