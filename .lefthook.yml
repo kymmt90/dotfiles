@@ -1,0 +1,9 @@
+output:
+  - success
+  - summary
+pre-commit:
+  commands:
+    lint:
+      run: standardrb --fix {staged_files}
+      glob: "*{.rb,Brewfile}"
+      stage_fixed: true
