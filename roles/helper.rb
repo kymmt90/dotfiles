@@ -13,13 +13,15 @@ XDG_CONFIG_HOME = File.join(ENV['HOME'], '.config')
 
 define :config_directory, xdg: true do
   directories = params[:name]
+  next if directories == '.'
+
   directories = File.join(XDG_CONFIG_HOME, directories) if params[:xdg]
   directory directories do
     user node[:user]
   end
 end
 
-define :config, xdg: true do
+define :config, tool: nil, xdg: true do
   directories = File.dirname(params[:name])
   xdg = params[:xdg]
   config_directory directories do
@@ -28,8 +30,19 @@ define :config, xdg: true do
 
   config_src = params[:name]
   config_src = File.join(File.basename(XDG_CONFIG_HOME), config_src) if params[:xdg]
-  config_src = File.join('cookbooks', File.basename(directories), 'files', config_src)
-  link File.join(XDG_CONFIG_HOME, params[:name]) do
+  config_src = File.join(
+    'cookbooks',
+    params[:tool] ? params[:tool] : File.basename(directories),
+    'files',
+    config_src
+  )
+
+  link_path = if params[:xdg]
+                File.join(XDG_CONFIG_HOME, params[:name])
+              else
+                File.join(ENV['HOME'], params[:name])
+              end
+  link link_path do
     to File.expand_path(config_src)
     user node[:user]
     force true
