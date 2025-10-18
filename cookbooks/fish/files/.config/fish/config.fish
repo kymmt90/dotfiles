@@ -48,3 +48,4 @@ if [ -f "$HOMEBREW_PREFIX/share/google-cloud-sdk/path.fish.inc" ]
 end
 
 abbr -a L --position anywhere --set-cursor "% | less"
+abbr -a RG --position anywhere --set-cursor "rg % | less"
