@@ -1,4 +1,5 @@
 cask_args adopt: true
+cask "claude"
 cask "mimestream"
 
 mas "Day One", id: 1055511498
