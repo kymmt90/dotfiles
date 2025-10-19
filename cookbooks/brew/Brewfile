@@ -35,6 +35,7 @@ cask "1password"
 cask "firefox"
 cask "gcloud-cli"
 cask "google-chrome"
+cask "logitune"
 cask "slack"
 cask "visual-studio-code"
 
