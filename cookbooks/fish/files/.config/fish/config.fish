@@ -1,4 +1,4 @@
-set -x LANG C
+set -x LANG en_US.UTF-8
 set -x EDITOR vi
 
 ulimit -n 1024
