@@ -49,3 +49,5 @@ end
 
 abbr -a L --position anywhere --set-cursor "% | less"
 abbr -a RG --position anywhere --set-cursor "rg % | less"
+
+fnox activate fish | source
