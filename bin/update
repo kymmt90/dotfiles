@@ -4,4 +4,6 @@ set -uo pipefail
 
 HOMEBREW_NO_ENV_HINTS=1 brew update && brew upgrade
 
-mas upgrade
+# Skip for now
+# cf. https://github.com/mas-cli/mas/issues/1029
+# mas upgrade
