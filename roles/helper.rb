@@ -33,14 +33,10 @@ define :config, tool: nil, xdg: true do
     xdg xdg
   end
 
+  tool_name = params[:tool] || directories.split("/")[1]
   config_src = params[:name]
   config_src = File.join(File.basename(XDG_CONFIG_HOME), config_src) if params[:xdg]
-  config_src = File.join(
-    "cookbooks",
-    params[:tool] || File.basename(directories),
-    "files",
-    config_src
-  )
+  config_src = File.join("cookbooks", tool_name, "files", config_src)
 
   link_path = if params[:xdg]
     File.join(XDG_CONFIG_HOME, params[:name])
