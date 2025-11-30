@@ -49,3 +49,7 @@ end
 
 abbr -a L --position anywhere --set-cursor "% | less"
 abbr -a RG --position anywhere --set-cursor "rg % | less"
+
+if type opam >/dev/null 2>&1 && test -r $HOME/.opam/opam-init/init.fish
+  source $HOME/.opam/opam-init/init.fish >/dev/null 2>&1
+end

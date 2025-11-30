@@ -12,6 +12,7 @@ include_recipe "../cookbooks/fish"
   ghostty
   git
   mise
+  opam
   pg
   rg
 ].each do |tool|
