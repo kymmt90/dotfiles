@@ -10,3 +10,8 @@ package "opam"
 config ".lambda-term-inputrc" do
   tool "opam"
 end
+
+config ".ocamlformat" do
+  tool "opam"
+  xdg false # because ocaml-lsp-server formatting doesn't respect XDG
+end
