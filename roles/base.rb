@@ -6,6 +6,7 @@ include_recipe "../cookbooks/fish"
 tools = %w[
   bat
   byobu
+  claude
   container
   docker
   fd
