@@ -19,7 +19,4 @@ theme = light:Apple System Colors Light,dark:Apple System Colors
 
 window-padding-balance = true
 
-quick-terminal-position = "center"
-keybind = "global:ctrl+;=toggle_quick_terminal"
-
 auto-update = "off"
