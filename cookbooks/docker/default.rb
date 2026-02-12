@@ -3,12 +3,11 @@ package "docker"
 package "docker-compose"
 package "docker-credential-helper"
 
-docker_config_directory_path = File.join(ENV["HOME"], ".docker")
-docker_config_path = File.join(docker_config_directory_path, "config.json")
-
-config_directory docker_config_directory_path do
+config_directory ".docker" do
   xdg false
 end
+
+docker_config_path = File.join(ENV["HOME"], ".docker", "config.json")
 
 execute "credsStore configuration" do
   tmp_path = "/tmp/docker-config.json"

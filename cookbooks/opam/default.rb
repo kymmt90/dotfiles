@@ -1,5 +1,4 @@
-opam_config_directory_path = File.join(ENV["HOME"], ".opam")
-config_directory opam_config_directory_path do
+config_directory ".opam" do
   xdg false
 end
 
