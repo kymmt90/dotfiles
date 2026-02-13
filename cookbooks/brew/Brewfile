@@ -27,6 +27,7 @@ brew "tree"
 brew "v8"
 brew "wget"
 brew "yarn"
+brew "yq"
 brew "heroku/brew/heroku"
 
 cask_args adopt: true
