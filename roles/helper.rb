@@ -15,6 +15,7 @@ def node.has_install_scope?(scope)
 end
 
 XDG_CONFIG_HOME = File.join(ENV["HOME"], ".config")
+XDG_LOCAL_BIN = File.join(ENV["HOME"], ".local", "bin")
 
 define :config_directory, xdg: true do
   directories = params[:name]

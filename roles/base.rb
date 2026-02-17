@@ -1,5 +1,7 @@
 include_recipe "helper"
 
+directory XDG_LOCAL_BIN
+
 include_recipe "../cookbooks/brew"
 include_recipe "../cookbooks/fish"
 
@@ -8,6 +10,7 @@ tools = %w[
   byobu
   claude
   container
+  cot
   docker
   fd
   ghostty

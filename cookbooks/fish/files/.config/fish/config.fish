@@ -11,6 +11,7 @@ set __fish_git_prompt_showuntrackedfiles 'yes'
 set __fish_git_prompt_showcolorhints 'yes'
 
 fish_add_path $HOME/.cargo/bin
+fish_add_path $HOME/.local/bin
 fish_add_path $HOME/go/bin
 fish_add_path $HOMEBREW_PREFIX/share/git-core/contrib/diff-highlight
 fish_add_path $HOMEBREW_PREFIX/opt/mysql@5.6/bin
