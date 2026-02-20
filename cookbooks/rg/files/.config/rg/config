@@ -4,3 +4,4 @@
 --hidden
 --pretty
 --smart-case
+--sort=path
