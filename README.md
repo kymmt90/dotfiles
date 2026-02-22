@@ -8,6 +8,8 @@ $ bin/setup -r work
 $ bin/setup -r personal
 ```
 
+[Manual steps](./docs/README.md)
+
 ## Update
 
 ```
