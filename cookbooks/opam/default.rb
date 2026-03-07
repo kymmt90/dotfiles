@@ -4,6 +4,7 @@ end
 
 package "opam"
 
+opam_config_directory_path = File.join(ENV["HOME"], ".opam")
 execute "opam init -y" do
   not_if "test -d #{opam_config_directory_path}/opam-init"
 end
