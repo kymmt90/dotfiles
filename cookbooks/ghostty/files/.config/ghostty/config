@@ -12,7 +12,6 @@ font-feature = -dlig
 cursor-style = bar
 cursor-style-blink = true
 
-adjust-cell-width = -1
 adjust-cell-height = 2
 
 theme = light:Apple System Colors Light,dark:Apple System Colors
