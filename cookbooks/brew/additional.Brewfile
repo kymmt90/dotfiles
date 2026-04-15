@@ -3,6 +3,7 @@ cask "claude"
 cask "mimestream"
 
 mas "Day One", id: 1055511498
+mas "Dictionaries", id: 1380563956
 mas "Flow", id: 1423210932
 mas "Goodnotes", id: 1444383602
 mas "Kindle", id: 302584613
