@@ -1,4 +1,7 @@
 {
   "model": "sonnet",
+  "enabledPlugins": {
+    "ruby-lsp@claude-plugins-official": true
+  },
   "language": "japanese"
 }
