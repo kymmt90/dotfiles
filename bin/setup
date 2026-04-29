@@ -4,7 +4,7 @@ set -uo pipefail
 
 xcode-select --install 2>/dev/null
 
-MITAMAE_VERSION="1.14.4"
+MITAMAE_VERSION=2.0.0
 MITAMAE_BIN=mitamae-aarch64-darwin
 
 if [ -e bin/$MITAMAE_BIN ]; then
@@ -17,7 +17,11 @@ if [ -e bin/$MITAMAE_BIN ]; then
 fi
 
 if [ ! -e bin/$MITAMAE_BIN ] || [ $MITAMAE_VERSION != $CURRENT_MITAMAE_VERSION ]; then
-  (cd bin; curl -sSL https://github.com/itamae-kitchen/mitamae/releases/download/v${MITAMAE_VERSION}/${MITAMAE_BIN}.tar.gz | tar xvz)
+  (
+    cd bin;
+    curl -sSL https://github.com/itamae-kitchen/mitamae/releases/download/v${MITAMAE_VERSION}/${MITAMAE_BIN} -o ${MITAMAE_BIN};
+    chmod +x ${MITAMAE_BIN}
+  )
 fi
 
 while getopts ":r:" opt; do
