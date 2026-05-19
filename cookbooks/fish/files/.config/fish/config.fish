@@ -1,7 +1,7 @@
 set -x LANG en_US.UTF-8
 set -x EDITOR vi
 
-ulimit -n 1024
+ulimit -n 65536
 
 eval (/opt/homebrew/bin/brew shellenv)
 
