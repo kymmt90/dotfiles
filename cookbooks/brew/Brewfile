@@ -33,6 +33,8 @@ brew "heroku/brew/heroku"
 cask_args adopt: true
 cask "1password-cli"
 cask "1password"
+cask "claude"
+cask "claude-code"
 cask "firefox"
 cask "font-new-york"
 cask "font-sf-mono"
