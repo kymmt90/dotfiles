@@ -4,7 +4,7 @@ set -uo pipefail
 
 xcode-select --install 2>/dev/null
 
-MITAMAE_VERSION=2.0.0
+MITAMAE_VERSION=2.0.2
 MITAMAE_BIN=mitamae-aarch64-darwin
 
 if [ -e bin/$MITAMAE_BIN ]; then
