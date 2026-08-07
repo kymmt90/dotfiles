@@ -54,3 +54,7 @@ abbr -a RG --position anywhere --set-cursor "rg % | less"
 if type opam >/dev/null 2>&1 && test -r $HOME/.opam/opam-init/init.fish
   source $HOME/.opam/opam-init/init.fish >/dev/null 2>&1
 end
+
+if test -r $HOME/.config/fish/config.fish.local
+  source $HOME/.config/fish/config.fish.local
+end
