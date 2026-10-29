@@ -14,6 +14,7 @@ fish_add_path $HOME/.cargo/bin
 fish_add_path $HOME/.local/bin
 fish_add_path $HOME/go/bin
 fish_add_path $HOMEBREW_PREFIX/share/git-core/contrib/diff-highlight
+fish_add_path $HOMEBREW_PREFIX/opt/curl/bin
 fish_add_path $HOMEBREW_PREFIX/opt/mysql@5.6/bin
 fish_add_path $HOMEBREW_PREFIX/opt/openjdk/bin
 fish_add_path $HOMEBREW_PREFIX/opt/openssl@1.1/bin
