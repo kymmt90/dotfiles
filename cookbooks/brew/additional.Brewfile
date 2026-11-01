@@ -1,5 +1,6 @@
 cask_args adopt: true
 cask "mimestream"
+cask "multipass"
 
 mas "Day One", id: 1055511498
 mas "Dictionaries", id: 1380563956
