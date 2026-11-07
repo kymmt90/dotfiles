@@ -18,4 +18,6 @@ theme = light:Apple System Colors Light,dark:Apple System Colors
 
 window-padding-balance = true
 
+macos-option-as-alt = true
+
 auto-update = "off"
